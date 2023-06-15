@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@500&display=swap');
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* h1 capitalised for emphasis. Complimentary font to Hind Light in the logo, but  */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #393D3F;
+}
+
+/* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
+ but can be changed as needs be. Fall-back font of sans-serif. Do not capitalise like h1 */
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #393D3F;
+}
+
+/* Default for p tag is the logo in the font, not used for headers as it is slim. H1 should be
+clear and emphasised for its importance */
+p {
+    font-family: 'Hind', sans-serif;
+    color: #393D3F;
+}
