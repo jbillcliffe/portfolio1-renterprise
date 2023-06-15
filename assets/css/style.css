@@ -28,3 +28,15 @@ p {
     font-family: 'Hind', sans-serif;
     color: #393D3F;
 }
+
+/* header styling */
+header {
+    background-color: #2D8A60;
+}
+
+/* the logo is square, so if the width is set the height will match and vise versa */
+.header-logo {
+    margin-left: 30px;
+    width: 15%;
+    background-color: #2D8A60;
+}
