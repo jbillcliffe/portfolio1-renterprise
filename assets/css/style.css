@@ -32,11 +32,15 @@ p {
 /* header styling */
 header {
     background-color: #2D8A60;
+    min-height: 100px;
+
 }
 
 /* the logo is square, so if the width is set the height will match and vise versa */
 .header-logo {
-    margin-left: 30px;
+
     width: 15%;
+    min-height: 100px;
+    min-width: 200px;
     background-color: #2D8A60;
 }
