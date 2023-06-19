@@ -47,6 +47,7 @@ header {
     background-color: #2D8A60;
 }
 
+/* Footer styling */
 footer {
     height: 100px;
     display: flex;
@@ -72,4 +73,8 @@ footer {
     text-align: center;
     line-height: 50px;
     color: #FFFFFF;
+}
+
+.social-networks i:hover {
+    color: #C9F0FF;
 }
