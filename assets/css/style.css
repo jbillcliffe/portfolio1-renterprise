@@ -46,3 +46,30 @@ header {
     min-width: 200px;
     background-color: #2D8A60;
 }
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2D8A60;
+}
+
+.social-networks {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-networks>li {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 10%;
+    padding: 10%;
+
+    color: #FFFFFF;
+}
