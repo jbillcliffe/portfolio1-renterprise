@@ -62,14 +62,14 @@ footer {
 
 .social-networks>li {
     display: flex;
-    flex-direction: row;
-    padding: 30px;
+    padding: 25px;
 }
 
 .social-networks i {
-    font-size: 160%;
-    margin: 10%;
-    padding: 10%;
-
+    font-size: 200%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
     color: #FFFFFF;
 }
