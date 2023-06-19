@@ -33,7 +33,9 @@ p {
 header {
     background-color: #2D8A60;
     min-height: 100px;
-
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* the logo is square, so if the width is set the height will match and vise versa */
