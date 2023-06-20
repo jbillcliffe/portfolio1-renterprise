@@ -161,6 +161,9 @@ of the theme.*/
 
 /*100% width of 80% overall width of page*/
 .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     height: 400px;
     width: 100%;
     overflow: hidden;
@@ -169,14 +172,23 @@ of the theme.*/
 }
 
 .hero-image {
+    display: flex;
+    align-items: flex-start;
     border-radius: 25px;
-    margin-left: 10%;
-    margin-top: 50px;
+    margin: 50px 50px 0px 30px;
     width: 300px;
     height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     background: url('../images/growth.jpg') no-repeat center center;
     background-size: contain;
-    box-shadow: 5px 5px 20px 20px #9acce6;
+    box-shadow: 0px 0px 40px 20px #9acce6;
 }
 
-.hero-text {}
+.hero-text {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    margin: 50px 100px 0px 0px;
+    text-shadow: 0px 0px 15px #FFFFFF;
+}
