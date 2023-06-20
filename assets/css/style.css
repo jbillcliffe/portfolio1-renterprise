@@ -12,6 +12,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #393D3F;
+    text-transform: uppercase;
+    font-size: 250%;
 }
 
 /* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
@@ -176,3 +178,5 @@ of the theme.*/
     background-size: contain;
     box-shadow: 5px 5px 20px 20px #9acce6;
 }
+
+.hero-text {}
