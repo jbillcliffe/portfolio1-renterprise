@@ -167,11 +167,12 @@ of the theme.*/
 }
 
 .hero-image {
+    border-radius: 25px;
     margin-left: 50px;
     margin-top: 50px;
     width: 300px;
     height: 300px;
     background: url('../images/growth.jpg') no-repeat center center;
     background-size: contain;
-    box-shadow: 5px 5px 10px 10px #9acce6;
+    box-shadow: 5px 5px 20px 20px #9acce6;
 }
