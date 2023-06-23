@@ -204,3 +204,12 @@ auto left/right margins to centre the content.*/
     margin-left: auto;
     margin-right: auto;
 }
+
+.index-proposition-section {
+    display: flex;
+    background-color: #7785AC;
+    width: inherit;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
