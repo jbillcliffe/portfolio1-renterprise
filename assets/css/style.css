@@ -14,16 +14,23 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #7785AC;
-    font-size: 250%;
-    text-shadow: 2px 2px 5px #2D8A60;
+    font-size: 300%;
 }
 
 /* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
  but can be changed as needs be. Fall-back font of sans-serif. Do not capitalise like h1 */
-h2,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #393D3F;
+    font-size: 300%;
+}
+
 h3 {
     font-family: 'Roboto', sans-serif;
     color: #393D3F;
+    font-size: 120%;
+
 }
 
 /* Default for p tag is the logo in the font, not used for headers as it is slim. H1 should be
@@ -192,7 +199,10 @@ Insert "growth" image into the image container and give it square dimensions*/
     align-items: flex-end;
     height: 300px;
     margin: 50px 100px 0px 0px;
-    text-shadow: 0 0 20px #FFFFFF;
+    /* text-shadow: 0 0 20px #FFFFFF; */
+    text-shadow: 2px 2px 5px #2D8A60;
+    text-align: center;
+
 }
 
 /*for the space below the hero which will hold sections. 100% width with 
@@ -226,15 +236,63 @@ auto left/right margins to centre the content.*/
 
 }
 
-.index-proposition-container {
+.full-width-row>h2 {
+    text-shadow: 0px 1px 5px #C9F0FF;
+}
+
+.index-proposition-container-left {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     height: auto;
     background-size: contain;
-    box-shadow: 0px 0px 8px 5px #C9F0FF;
-    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 15px 50px;
     align-content: center;
     justify-content: center;
+    margin: 2%;
+    padding: 1% 2% 2%;
+    text-shadow: 0px 1px 5px #C9F0FF;
+    text-decoration-line: underline;
 }
+
+.index-proposition-container-centre {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    background-size: contain;
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 15px;
+    align-content: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 1% 2% 2%;
+    text-shadow: 0px 1px 5px #C9F0FF;
+    text-decoration-line: underline;
+}
+
+.index-proposition-container-right {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    background-size: contain;
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 50px 15px;
+    align-content: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 1% 2% 2%;
+    text-shadow: 0px 1px 5px #C9F0FF;
+    text-decoration-line: underline;
+}
+
+/*.index-proposition-h3 {
+    border-bottom: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    width: inherit;
+}*/
