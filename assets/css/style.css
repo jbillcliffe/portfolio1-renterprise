@@ -240,8 +240,9 @@ auto left/right margins to centre the content.*/
     text-shadow: 0px 1px 5px #C9F0FF;
 }
 
-.index-proposition-container-left {
-    display: flex;
+/*
+.index-proposition-card-left {
+
     margin-left: auto;
     margin-right: auto;
     width: 20%;
@@ -257,7 +258,7 @@ auto left/right margins to centre the content.*/
     text-decoration-line: underline;
 }
 
-.index-proposition-container-centre {
+.index-proposition-card-centre {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -274,7 +275,7 @@ auto left/right margins to centre the content.*/
     text-decoration-line: underline;
 }
 
-.index-proposition-container-right {
+.index-proposition-card-right {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -289,7 +290,38 @@ auto left/right margins to centre the content.*/
     padding: 1% 2% 2%;
     text-shadow: 0px 1px 5px #C9F0FF;
     text-decoration-line: underline;
+}*/
+
+.index-proposition-card {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    background-size: contain;
+    align-content: center;
+    justify-content: center;
+    margin: 2%;
+    padding: 1% 2% 2%;
+    text-shadow: 0px 1px 5px #C9F0FF;
+    text-decoration-line: underline;
 }
+
+.card-left {
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 15px 50px;
+}
+
+.card-centre {
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 15px;
+}
+
+.card-right {
+    box-shadow: 0px 0px 5px 5px #C9F0FF;
+    border-radius: 50px 15px;
+}
+
 
 /*.index-proposition-h3 {
     border-bottom: 1px solid #FFFFFF;
