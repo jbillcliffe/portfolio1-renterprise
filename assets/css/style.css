@@ -284,5 +284,8 @@ auto left/right margins to centre the content.*/
     justify-content: center;
     box-shadow: none;
     width: 100%;
-    margin-bottom: 2px;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 130%;
 }
