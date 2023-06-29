@@ -5,8 +5,47 @@
     margin: 0;
     padding: 0;
     border: none;
-    box-sizing: border-box;
     /* To prevent overlapping border issues!! */
+    box-sizing: border-box;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #7785AC;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 /* h1 capitalised for emphasis. Complimentary font to Hind Light in the logo, but  */
@@ -119,7 +158,7 @@ respective page */
 
 /* Footer styling */
 /*Full page width, fixed 100px height (height matches header). Flex row display
-with centred content and the background colour in line with the theme */
+with centred content and the background colour in line with the theme top shadow to help content pop*/
 footer {
     width: 100%;
     height: 100px;
@@ -127,6 +166,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #2D8A60;
+    box-shadow: 0px -2px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* social-networks ul css set the text to be centre aligned in a flex row 
@@ -191,7 +231,6 @@ Insert "growth" image into the image container and give it square dimensions*/
     background: url('../images/growth.jpg') no-repeat center center;
     background-size: contain;
     box-shadow: 0px 0px 40px 20px #C9F0FF;
-
 }
 
 /* The image is on flex-start so the text goes on flex-end*/
@@ -202,22 +241,20 @@ Insert "growth" image into the image container and give it square dimensions*/
     margin: 50px 100px 0px 0px;
     /* text-shadow: 0 0 20px #FFFFFF; */
     text-shadow: 2px 2px 5px #2D8A60;
-    text-align: center;
-
+    text-align: right;
 }
 
 /*for the space below the hero which will hold sections. 100% width with 
 auto left/right margins to centre the content.*/
 .content-container {
-
-    background-color: #C9F0FF;
+    background-color: #7785AC;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*A class to create a row of full screen width and align its content centrally */
 .full-width-row {
-
     width: 100%;
     padding: 1%;
     margin-left: auto;
@@ -228,78 +265,79 @@ auto left/right margins to centre the content.*/
     gap: 2%;
 }
 
+/*For the proposition cards in the index page to set the background colour and alignment*/
 .index-proposition-section {
-
-    background-color: #7785AC;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-.full-width-row>h2 {
+/*Specifically to style an h2 within the index-proposition-section->full-width-row class (situated in the index only)*/
+.index-proposition-section>.full-width-row>h2 {
+    color: #FFFFFF;
     text-shadow: 0px 1px 5px #C9F0FF;
 }
 
+/*out-the-box section on the index page, set a shaddow at the base to create a pop out effect*/
 .out-the-box {
+    background-color: #2D8A60;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border-top: solid 1px #393D3F;
     box-shadow: 0px 2px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*setting the p element(s) within the out-the-box class (in index) to be slightly larger than usual p elements, centrally aligned and a %age width of its container*/
 .out-the-box>p {
-
+    color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
+    font-size: 160%;
+    max-width: 70%;
 }
 
-
+/* Card creation with hover tutorial gained from : https: //www.w3schools.com/howto/howto_css_cards.asp, added additional 
+CSS and tweaked existing CSS to suit my design. Setting flex-direction to column with a wrap present means each element in this container,
+will stack on top of each other instead of putting them into a row, creating the card effect as desired */
 .index-proposition-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    background-color: #C9F0FF;
     width: 20%;
     height: auto;
     align-content: center;
     justify-content: center;
-    /*box-shadow: 0px 0px 5px 5px #C9F0FF;*/
     border-radius: 15px;
     margin: 2% auto;
+    /*for any style changes, how quick to make them*/
     transition: 0.3s;
-
 }
 
-.index-proposition-card-head {
+/*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
+.index-proposition-card:hover {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+}
 
+/*Proposition card header style "shadow" creates a glow, sets to full width of container (aiding the flex-direction:column stacking feature)*/
+.index-proposition-card-head {
     margin: 2% auto;
     text-align: center;
-    text-shadow: 0px 1px 5px #C9F0FF;
-    /*text-decoration-line: underline;*/
+    text-shadow: 0px 1px 5px #2D8A60;
     width: 100%;
-
 }
 
+/*Proposition card image style to full width of container (aiding the flex-direction:column stacking feature)*/
 .index-proposition-card-img {
-    border-radius: 5px;
-    position: relative;
-    align-content: center;
-    justify-content: center;
     width: 100%;
-    margin: auto 0px;
 }
 
 .index-proposition-card-text {
-    display: flex;
-    position: relative;
+
     text-align: center;
     justify-content: center;
-    box-shadow: none;
     width: 100%;
     padding: 15px;
-    overflow: hidden;
-    position: relative;
     font-size: 130%;
 }
