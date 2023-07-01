@@ -280,6 +280,8 @@ auto left/right margins to centre the content.*/
 
 /*A class to create a row of full screen width and align its content centrally */
 .full-width-row {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0.5%;
     margin-left: auto;
@@ -297,6 +299,7 @@ auto left/right margins to centre the content.*/
 
 /*For the proposition cards in the index page to set the background colour and alignment*/
 .index-proposition-section {
+    flex-wrap: wrap;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -317,6 +320,19 @@ auto left/right margins to centre the content.*/
     flex-direction: column;
     padding-bottom: 15px;
     box-shadow: 0px 2px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proposition-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    gap: 2%;
 }
 
 /*setting the p element(s) within the out-the-box class (in index) to be slightly larger than usual p elements, centrally aligned and a percentage width of its container*/
@@ -399,6 +415,7 @@ will stack on top of each other instead of putting them into a row, creating the
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     padding: 30px;
     /*for any style changes, how quick to make them*/
     transition: 0.3s;
@@ -456,7 +473,12 @@ will stack on top of each other instead of putting them into a row, creating the
 }
 
 /*If the index-proposition-cards get too small, they get out of line*/
-@media screen and (max-width:1100px) {}
+@media screen and (max-width:1100px) {
+    .index-proposition-card {
+        width: 40%;
+    }
+}
+
 
 @media screen and (max-width:1024px) {
     .button {
@@ -468,4 +490,46 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 }
 
-@media screen and (max-width:950px) {}
+@media screen and (max-width:950px) {
+
+    /*Increase button width for readability.*/
+    .out-the-box .button {
+        width: 40%;
+    }
+
+    /*Increase button width to make the text more likely to be on one line.*/
+    .index-features-section .button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #7785AC;
+        font-size: 250%;
+    }
+
+    h1 span {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .index-proposition-card {
+        width: 60%;
+    }
+
+    /*Increase button width for readability.*/
+    .out-the-box .button {
+        width: 60%;
+    }
+
+    /*Increase button width to make the text more likely to be on one line.*/
+    .index-features-section .button {
+        width: 80%;
+    }
+}
