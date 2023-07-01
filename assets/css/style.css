@@ -6,20 +6,23 @@
     padding: 0;
     border: none;
     /* To prevent overlapping border issues!! */
+    font-family: 'Hind', sans-serif;
     box-sizing: border-box;
 }
 
-/*Set a default format for all buttons*/
-.button {
-    border-radius: 4px;
-    background-color: #7785AC;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 180%;
-    padding: 10px;
-    cursor: pointer;
-    margin: 5px;
+/*Nice smooth entry animation for the webage, it also obscures the transitions on other elements jumping on page load.*/
+body {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* h1 capitalised for emphasis. Complimentary font to Hind Light in the logo, but  */
@@ -27,7 +30,11 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #7785AC;
-    font-size: 300%;
+    font-size: 400%;
+}
+
+h1 span {
+    font-size: 70%;
 }
 
 /* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
@@ -36,7 +43,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #393D3F;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 h3 {
@@ -44,6 +51,50 @@ h3 {
     color: #393D3F;
     font-size: 120%;
 
+}
+
+/*button hover animation tutorial from https: //www.w3schools.com/howto/howto_css_animate_buttons.asp*/
+/*Set a default format for all buttons has an inner glow and drop shadow (multiple box shadows) to make it pop out, encouraging a click.*/
+.button {
+    height: auto;
+    border-radius: 15px;
+    background-color: #7785AC;
+    box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 180%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/*span inside the button class to also include pointer cursor (stops a flicker between mouse and hand)*/
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+/*last part of span element within the button add the >> via unicode and set its position and transition speed to match previous.*/
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+/*change padding amount on hover to give the perspective of motion*/
+.button:hover span {
+    padding-right: 20px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 /* Default for p tag is the logo in the font, not used for headers as it is slim. H1 should be
@@ -230,13 +281,18 @@ auto left/right margins to centre the content.*/
 /*A class to create a row of full screen width and align its content centrally */
 .full-width-row {
     width: 100%;
-    padding: 1%;
+    padding: 0.5%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-content: center;
     justify-content: center;
     gap: 2%;
+}
+
+.blankspace {
+    height: 50px;
+    background-color: #7785AC;
 }
 
 /*For the proposition cards in the index page to set the background colour and alignment*/
@@ -259,6 +315,7 @@ auto left/right margins to centre the content.*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 15px;
     box-shadow: 0px 2px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -268,7 +325,16 @@ auto left/right margins to centre the content.*/
     margin-left: auto;
     margin-right: auto;
     font-size: 160%;
-    max-width: 70%;
+    max-width: 80%;
+}
+
+/*Set a width and centre the button with a bit of spacing below in this section.*/
+.out-the-box .button {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 /* Card creation with hover tutorial gained from : https: //www.w3schools.com/howto/howto_css_cards.asp, added additional 
@@ -285,7 +351,7 @@ will stack on top of each other instead of putting them into a row, creating the
     align-content: center;
     justify-content: center;
     border-radius: 15px;
-    margin: 2% auto;
+    margin: 2% 4%;
     /*for any style changes, how quick to make them*/
     transition: 0.3s;
 }
@@ -297,7 +363,8 @@ will stack on top of each other instead of putting them into a row, creating the
 
 /*Proposition card header style "shadow" creates a glow, sets to full width of container (aiding the flex-direction:column stacking feature)*/
 .index-proposition-card-head {
-    margin: 2% auto;
+    margin: 1% 0;
+    padding: 1%;
     text-align: center;
     text-shadow: 0px 1px 5px #2D8A60;
     width: 100%;
@@ -314,6 +381,91 @@ will stack on top of each other instead of putting them into a row, creating the
     text-align: center;
     justify-content: center;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     font-size: 130%;
 }
+
+/*Final section on index page, has a brief overview of some features and a button to go to product tab. Centrally aligned box, with centrally aligned content. */
+.index-features-section {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    background-color: #C9F0FF;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    /*for any style changes, how quick to make them*/
+    transition: 0.3s;
+    font-size: 130%;
+}
+
+.index-features-section .button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-size: 100%;
+}
+
+/*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/*specifically for index-proposition-cards to try to keep the headers in one line */
+@media screen and (max-width:1374px) {
+    .index-proposition-card {
+        width: 25%;
+        margin: 2% 0%;
+    }
+}
+
+/*For screens of resolution no greater in width than 1200px*/
+@media screen and (max-width:1200px) {
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #7785AC;
+        font-size: 300%;
+    }
+
+    h1 span {
+        font-size: 70%;
+    }
+
+
+
+    /*decrease font size and increase width so it fits on less lines to not dominate too much height space*/
+    .out-the-box>p {
+        font-size: 120%;
+        max-width: 90%;
+    }
+
+    /*Increase button width for readability.*/
+    .out-the-box .button {
+        width: 20%;
+    }
+
+    /*Increase button width to make the text more likely to be on one line.*/
+    .index-features-section .button {
+        width: 35%;
+    }
+}
+
+/*If the index-proposition-cards get too small, they get out of line*/
+@media screen and (max-width:1100px) {}
+
+@media screen and (max-width:1024px) {
+    .button {
+        font-size: 140%;
+    }
+
+    .index-features-section .button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:950px) {}
