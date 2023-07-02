@@ -153,9 +153,10 @@ the page from the end of the row. Use align-items:center to align it vertically*
     align-items: center;
 }
 
+/*
 .burger-btn {
     display: none;
-}
+}*/
 
 .burger-icon {
     cursor: pointer;
@@ -607,28 +608,48 @@ will stack on top of each other instead of putting them into a row, creating the
     .header-menu {
         clear: none;
         display: flex;
+        max-height: none;
     }
-
-    .header-menu a {
-        display: none;
-    }
-
 
     .header-menu>ul {
+        position: absolute;
+        visibility: hidden;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
+        top: 100px;
+        z-index: 100;
     }
 
-    .header-menu>ul>li {
+    .burger-btn:checked~ul {
+        visibility: visible;
+    }
+
+    .burger-btn:checked~ul li {
+        position: relative;
+        background: #2D8A60;
+        width: 100px;
+        height: 30px;
+        font-size: 50%;
+        position: relative;
         display: flex;
         align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 0px;
     }
 
-    .header-menu>ul~li {
-        background: #2D8A60;
-        width: 100%;
-        height: auto;
-        font-size: 100%;
+    .burger-btn:checked~ul li a {
+        clear: both;
+        position: relative;
+        display: inherit;
+        width: 100px;
+        height: 30px;
+
+
+    }
+
+    .active {
+        border-bottom: none;
     }
 
     .index-proposition-card {
