@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@500&display=swap');
-
 /* Global Styling */
 * {
     margin: 0;
@@ -121,16 +119,16 @@ header {
 /* The "a" tag which holds the logo - 15% of page width and minimum height to match header
 minimum width to match logo */
 header a {
-    width: 15%;
-    min-height: 100px;
-    min-width: 200px;
+    height: 100px;
+    width: 200px;
 }
 
 /* Logo style - Get width from parent ("a" tag) 0 margin within its container (header) 
 setting again the min height/width to match the parent and to not let the image go any
 smaller, to the point it cannot be seen. Which it will without this setting */
 .header-logo {
-    width: inherit;
+    height: 100px;
+    width: 200px;
     margin-left: 0;
     min-height: 100px;
     min-width: 200px;
@@ -143,6 +141,7 @@ the page from the end of the row. Use align-items:center to align it vertically*
 
 .header-menu {
     width: 85%;
+    height: 100px;
     font-size: 150%;
     height: inherit;
     color: #FFFFFF;
@@ -392,6 +391,7 @@ will stack on top of each other instead of putting them into a row, creating the
 /*Proposition card image style to full width of container (aiding the flex-direction:column stacking feature)*/
 .index-proposition-card-img {
     width: 100%;
+    height: auto;
 }
 
 /*Proposition card text gives a p tag slightly bigger  for emphasis, also centre aligned, full width to continue column stack*/
@@ -420,7 +420,6 @@ will stack on top of each other instead of putting them into a row, creating the
     margin-right: auto;
     margin-top: 20px;
     padding: 30px;
-    /*for any style changes, how quick to make them*/
     transition: 0.3s;
     font-size: 130%;
 }
@@ -434,7 +433,7 @@ will stack on top of each other instead of putting them into a row, creating the
 }
 
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-/*specifically for index-proposition-cards to try to keep the headers in one line */
+/*For index-proposition-cards to try to keep the headers in one line */
 @media screen and (max-width:1490px) {
 
     /*Increase button width for readability.*/
@@ -448,7 +447,7 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 }
 
-/*specifically for index-proposition-cards to try to keep the headers in one line */
+/*For index-proposition-cards to try to keep the headers in one line */
 @media screen and (max-width:1374px) {
     .index-proposition-card {
         width: 25%;
@@ -459,6 +458,7 @@ will stack on top of each other instead of putting them into a row, creating the
 /*For screens of resolution no greater in width than 1200px*/
 @media screen and (max-width:1200px) {
 
+    /*Decrease font sizes*/
     h1 {
         font-size: 300%;
     }
@@ -466,8 +466,6 @@ will stack on top of each other instead of putting them into a row, creating the
     h1 span {
         font-size: 70%;
     }
-
-
 
     /*decrease font size and increase width so it fits on less lines to not dominate too much height space*/
     .out-the-box>p {
@@ -480,7 +478,7 @@ will stack on top of each other instead of putting them into a row, creating the
         width: 20%;
     }
 
-    /*Increase button width to make the text more likely to be on one line.*/
+    /*Increase button width to put text on one line.*/
     .index-features-section .button {
         width: 35%;
     }
@@ -523,6 +521,7 @@ will stack on top of each other instead of putting them into a row, creating the
 
 @media screen and (max-width:850px) {
 
+    /*Decrease font sizes*/
     h1 {
         font-size: 250%;
     }
@@ -589,12 +588,11 @@ will stack on top of each other instead of putting them into a row, creating the
 
 @media screen and (max-width:520px) {
 
+    /*Adjust hero + font sizes in buttons + out of box font size*/
     .hero-container {
         height: 250px;
     }
 
-    /* The image is positioned at the start of the flex container (hero-container)
-    Insert "growth" image into the image container and give it square dimensions*/
     .hero-image {
         width: 175px;
         height: 175px;
@@ -602,7 +600,6 @@ will stack on top of each other instead of putting them into a row, creating the
         min-height: 175px;
     }
 
-    /* The image is on flex-start so the text goes on flex-end*/
     .hero-text {
         height: 175px;
         font-size: 70%;
@@ -619,10 +616,11 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-features-section .button {
         font-size: 80%;
     }
-
 }
 
 @media screen and (max-width:440px) {
+
+    /*change hero to stack, so image will be on top of text, then resize hero content*/
     .hero-container {
         flex-direction: column;
         height: auto;
@@ -644,6 +642,7 @@ will stack on top of each other instead of putting them into a row, creating the
         text-align: center;
     }
 
+    /*alter button size*/
     .index-features-section .button {
         width: 90%;
     }
