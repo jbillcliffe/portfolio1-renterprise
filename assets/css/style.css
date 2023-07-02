@@ -140,15 +140,38 @@ font colour and size set. Set it to be a flex row, and to set the menu items to 
 the page from the end of the row. Use align-items:center to align it vertically*/
 
 .header-menu {
+    clear: both;
     width: 85%;
     height: 100px;
     font-size: 150%;
     height: inherit;
+    background-color: #2D8A60;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+}
+
+.burger-btn {
+    display: none;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px;
+    user-select: none;
+    visibility: hidden;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 200%;
+}
+
+.burger-icon:hover {
+    color: #C9F0FF;
 }
 
 /*Styling each link in the menu (each list item). List style type:none means that
@@ -574,7 +597,39 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 }
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:705px) {
+
+    .burger-icon {
+        visibility: visible;
+    }
+
+    .header-menu {
+        clear: none;
+        display: flex;
+    }
+
+    .header-menu a {
+        display: none;
+    }
+
+
+    .header-menu>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-menu>ul>li {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header-menu>ul~li {
+        background: #2D8A60;
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+    }
 
     .index-proposition-card {
         width: 65%;
