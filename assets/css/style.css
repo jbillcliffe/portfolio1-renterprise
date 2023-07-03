@@ -154,10 +154,10 @@ the page from the end of the row. Use align-items:center to align it vertically*
     align-items: center;
 }
 
-/*
+
 .burger-btn {
     display: none;
-}*/
+}
 
 .burger-icon {
     cursor: pointer;
