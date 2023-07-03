@@ -11,6 +11,7 @@
 /*Nice smooth entry animation for the webage, it also obscures the transitions on other elements jumping on page load.*/
 body {
     animation: fadeIn 5s;
+    width: 100%
 }
 
 @keyframes fadeIn {
@@ -168,7 +169,7 @@ the page from the end of the row. Use align-items:center to align it vertically*
     visibility: hidden;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 200%;
+    font-size: 100%;
 }
 
 .burger-icon:hover {
@@ -517,6 +518,16 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-features-section .button {
         font-size: 90%;
     }
+
+    .index-proposition-card {
+        box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
+    .index-proposition-card:hover {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
 }
 
 
@@ -570,6 +581,11 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-proposition-card-text {
         font-size: 90%;
     }
+
+    .index-features-section {
+
+        font-size: 90%;
+    }
 }
 
 @media screen and (max-width:760px) {
@@ -601,6 +617,30 @@ will stack on top of each other instead of putting them into a row, creating the
 
 @media screen and (max-width:705px) {
 
+    header {
+
+        width: 100%;
+        height: 75px;
+    }
+
+    header a {
+        height: 75px;
+        width: auto;
+    }
+
+    /* Logo style - Get width from parent ("a" tag) 0 margin within its container (header) 
+    setting again the min height/width to match the parent and to not let the image go any
+    smaller, to the point it cannot be seen. Which it will without this setting */
+    .header-logo {
+
+        height: 75px;
+        width: auto;
+        min-height: 1px;
+        min-width: 1px;
+    }
+
+
+
     .burger-icon {
         visibility: visible;
     }
@@ -617,8 +657,11 @@ will stack on top of each other instead of putting them into a row, creating the
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        top: 100px;
+        top: 75px;
         z-index: 100;
+        border-top: #393D3F 1px solid;
+        border-right: #393D3F 1px solid;
+        border-left: #393D3F 1px solid;
     }
 
     .burger-btn:checked~ul {
@@ -630,12 +673,13 @@ will stack on top of each other instead of putting them into a row, creating the
         background: #2D8A60;
         width: 100px;
         height: 30px;
-        font-size: 50%;
+        font-size: 80%;
         position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
         margin-right: 0px;
+        border-bottom: #393D3F 1px solid;
     }
 
     .burger-btn:checked~ul li a {
@@ -644,8 +688,6 @@ will stack on top of each other instead of putting them into a row, creating the
         display: inherit;
         width: 100px;
         height: 30px;
-
-
     }
 
     .active {
@@ -712,14 +754,34 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .hero-text {
-        height: 100px;
-        margin: 15px;
-        font-size: 70%;
         text-align: center;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-text h1 {
+
+        margin: 15px;
+
+        content: 'RENTERPRISE\AInnovative Software To Drive Your Rental Business';
+        white-space: pre-wrap;
     }
 
     /*alter button size*/
     .index-features-section .button {
-        width: 90%;
+        width: 100%;
     }
+
+    footer {
+        justify-content: center;
+    }
+
+    .social-networks i {
+        font-size: 100%;
+        height: auto;
+        width: auto;
+        line-height: 40px;
+    }
+
 }
