@@ -11,7 +11,8 @@
 /*Nice smooth entry animation for the webage, it also obscures the transitions on other elements jumping on page load.*/
 body {
     animation: fadeIn 5s;
-    width: 100%
+    width: 100%;
+    background-color: #7785AC;
 }
 
 @keyframes fadeIn {
@@ -457,7 +458,50 @@ will stack on top of each other instead of putting them into a row, creating the
     font-size: 100%;
 }
 
+/*about.html*/
+.about-box {
+    width: 80%;
+    background-color: #2D8A60;
+    color: #C9F0FF;
+    border-radius: 25px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 3% auto;
+}
+
+.about-box-header {
+    display: flex;
+    width: 100%;
+    padding: 15px 20px;
+    color: #C9F0FF;
+}
+
+.about-box-header img {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    height: auto;
+}
+
+.about-box-header h1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    color: #C9F0FF;
+    text-transform: none;
+}
+
+/*.about-box h1 {
+    width: 80%;
+    background-color: rgba(45, 138, 96, 0.5);
+    color: #C9F0FF;
+    border-radius: 25px;
+}*/
+
+
+
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/*Added additional media queries to make the precision greater*/
 /*For index-proposition-cards to try to keep the headers in one line */
 @media screen and (max-width:1490px) {
 
