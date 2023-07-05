@@ -38,7 +38,6 @@ h1 span {
     font-size: 70%;
 }
 
-
 /* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
  but can be changed as needs be. Fall-back font of sans-serif. Do not capitalise like h1 */
 h2 {
@@ -52,7 +51,6 @@ h3 {
     font-family: 'Roboto', sans-serif;
     color: #393D3F;
     font-size: 120%;
-
 }
 
 /*button hover animation tutorial from https: //www.w3schools.com/howto/howto_css_animate_buttons.asp*/
@@ -104,7 +102,6 @@ clear and emphasised for its importance */
 p {
     font-family: 'Hind', sans-serif;
     color: #393D3F;
-
 }
 
 /* header styling -
@@ -118,7 +115,6 @@ header {
     flex-direction: row;
     margin-left: 0;
     box-shadow: 0px 0px 5px 5px #393D3F;
-
 }
 
 /* The "a" tag which holds the logo - 15% of page width and minimum height to match header
@@ -143,7 +139,6 @@ smaller, to the point it cannot be seen. Which it will without this setting */
 /*Styling the header menu  Width of 85% (remainder in header after logo takes 15%) 
 font colour and size set. Set it to be a flex row, and to set the menu items to add into
 the page from the end of the row. Use align-items:center to align it vertically*/
-
 .header-menu {
     clear: both;
     width: 85%;
@@ -157,7 +152,6 @@ the page from the end of the row. Use align-items:center to align it vertically*
     justify-content: flex-end;
     align-items: center;
 }
-
 
 .burger-btn {
     display: none;
@@ -220,8 +214,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #2D8A60;
-    /*box-shadow: 0px -2px 8px 8px rgba(0, 0, 0, 0.2);*/
-
     box-shadow: 0px 3px 3px -1px #C9F0FF inset, 0px -2px 5px 5px #393D3F;
 }
 
@@ -233,7 +225,6 @@ with centred items*/
     align-items: center;
     flex-direction: row;
 }
-
 
 /*Each list item of the social networks unorganised list carries the flex 
 display has padding (from top and bottom of social networks class, which is the
@@ -267,7 +258,6 @@ any overflow to stop it escape the container. BG white in colour.*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     height: 400px;
     width: 100%;
     overflow: hidden;
@@ -289,7 +279,6 @@ Insert "growth" image into the image container and give it square dimensions*/
     min-height: 300px;
     background: url('../images/growth.webp') no-repeat center center;
     background-size: contain;
-    /*box-shadow: 0px 0px 40px 20px #C9F0FF;*/
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
 }
 
@@ -299,7 +288,6 @@ Insert "growth" image into the image container and give it square dimensions*/
     align-items: flex-end;
     height: 300px;
     margin: 50px 100px 0px 0px;
-    /* text-shadow: 0 0 20px #FFFFFF; */
     text-shadow: 2px 2px 5px #2D8A60;
     text-align: right;
 }
@@ -373,7 +361,6 @@ auto left/right margins to centre the content.*/
 }
 
 /*setting the p element(s) within the out-the-box class (in index) to be slightly larger than usual p elements, centrally aligned and a percentage width of its container*/
-
 .out-the-box>p {
     color: #FFFFFF;
     margin-left: auto;
@@ -398,7 +385,6 @@ will stack on top of each other instead of putting them into a row, creating the
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /*box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);*/
     box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 10px 5px #393D3F;
     background-color: #C9F0FF;
     width: 20%;
@@ -413,7 +399,6 @@ will stack on top of each other instead of putting them into a row, creating the
 
 /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
 .index-proposition-card:hover {
-    /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);*/
     box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 15px 10px #393D3F;
 }
 
@@ -434,7 +419,6 @@ will stack on top of each other instead of putting them into a row, creating the
 
 /*Proposition card text gives a p tag slightly bigger  for emphasis, also centre aligned, full width to continue column stack*/
 .index-proposition-card-text {
-
     text-align: center;
     justify-content: center;
     width: 100%;
@@ -448,7 +432,6 @@ will stack on top of each other instead of putting them into a row, creating the
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /*box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);*/
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
     background-color: #C9F0FF;
     height: auto;
@@ -482,7 +465,6 @@ will stack on top of each other instead of putting them into a row, creating the
     color: #C9F0FF;
     border-radius: 25px;
     margin: 3% auto;
-    /*box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);*/
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
 }
 
@@ -530,9 +512,6 @@ will stack on top of each other instead of putting them into a row, creating the
     color: #C9F0FF;
     border-radius: 25px;
 }*/
-
-
-
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/
 /*For index-proposition-cards to try to keep the headers in one line */
@@ -597,16 +576,11 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .index-proposition-card {
-        /*box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);*/
-        /*box-shadow: 3px 3px 5px #FFFFFF inset, 0px 0px 5px 3px #393D3F;*/
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 8px 3px #393D3F;
     }
 
-
     /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
     .index-proposition-card:hover {
-        /*box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);*/
-        /*box-shadow: 3px 3px 5px #FFFFFF inset, 0px 0px 8px 8px #393D3F;*/
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 12px 7px #393D3F;
     }
 }
@@ -664,13 +638,11 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .index-features-section {
-
         font-size: 90%;
     }
 }
 
 @media screen and (max-width:760px) {
-
     .hero-container {
         align-items: center;
         height: 300px;
@@ -697,7 +669,6 @@ will stack on top of each other instead of putting them into a row, creating the
 
 
 @media screen and (max-width:705px) {
-
     header {
 
         width: 100%;
@@ -719,8 +690,6 @@ will stack on top of each other instead of putting them into a row, creating the
         min-height: 1px;
         min-width: 1px;
     }
-
-
 
     .burger-icon {
         visibility: visible;
@@ -836,7 +805,6 @@ will stack on top of each other instead of putting them into a row, creating the
         height: 150px;
         min-width: 150px;
         min-height: 150px;
-        /*box-shadow: 0px 0px 10px 10px #C9F0FF;*/
         box-shadow: 2px 2px 5px #C9F0FF inset, 2px 2px 5px 2px #393D3F;
     }
 
@@ -848,9 +816,7 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .hero-text h1 {
-
         margin: 15px;
-
         content: 'RENTERPRISE\AInnovative Software To Drive Your Rental Business';
         white-space: pre-wrap;
     }
@@ -870,5 +836,4 @@ will stack on top of each other instead of putting them into a row, creating the
         width: auto;
         line-height: 40px;
     }
-
 }
