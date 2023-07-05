@@ -104,7 +104,7 @@ clear and emphasised for its importance */
 p {
     font-family: 'Hind', sans-serif;
     color: #393D3F;
-    font-weight: 200%;
+
 }
 
 /* header styling -
@@ -117,6 +117,8 @@ header {
     display: flex;
     flex-direction: row;
     margin-left: 0;
+    box-shadow: 0px 0px 5px 5px #393D3F;
+
 }
 
 /* The "a" tag which holds the logo - 15% of page width and minimum height to match header
@@ -218,7 +220,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #2D8A60;
-    box-shadow: 0px -2px 8px 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px -2px 8px 8px rgba(0, 0, 0, 0.2);*/
+
+    box-shadow: 0px 3px 3px -1px #C9F0FF inset, 0px -2px 5px 5px #393D3F;
 }
 
 /* social-networks ul css set the text to be centre aligned in a flex row 
@@ -229,6 +233,7 @@ with centred items*/
     align-items: center;
     flex-direction: row;
 }
+
 
 /*Each list item of the social networks unorganised list carries the flex 
 display has padding (from top and bottom of social networks class, which is the
@@ -268,6 +273,7 @@ any overflow to stop it escape the container. BG white in colour.*/
     overflow: hidden;
     position: relative;
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px -3px #393D3F inset, 0px 0px 3px 3px #393D3F inset;
 }
 
 /* The image is positioned at the start of the flex container (hero-container)
@@ -283,7 +289,8 @@ Insert "growth" image into the image container and give it square dimensions*/
     min-height: 300px;
     background: url('../images/growth.webp') no-repeat center center;
     background-size: contain;
-    box-shadow: 0px 0px 40px 20px #C9F0FF;
+    /*box-shadow: 0px 0px 40px 20px #C9F0FF;*/
+    box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
 }
 
 /* The image is on flex-start so the text goes on flex-end*/
@@ -346,8 +353,10 @@ auto left/right margins to centre the content.*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 15px;
+    padding: 10px 0 5px 0;
     box-shadow: 0px 2px 8px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 10px 0;
+
 }
 
 .proposition-holder {
@@ -389,7 +398,8 @@ will stack on top of each other instead of putting them into a row, creating the
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 10px 5px #393D3F;
     background-color: #C9F0FF;
     width: 20%;
     height: auto;
@@ -403,7 +413,8 @@ will stack on top of each other instead of putting them into a row, creating the
 
 /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
 .index-proposition-card:hover {
-    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 15px 10px #393D3F;
 }
 
 /*Proposition card header style "shadow" creates a glow, sets to full width of container (aiding the flex-direction:column stacking feature)*/
@@ -437,7 +448,8 @@ will stack on top of each other instead of putting them into a row, creating the
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
     background-color: #C9F0FF;
     height: auto;
     align-content: center;
@@ -445,10 +457,14 @@ will stack on top of each other instead of putting them into a row, creating the
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    padding: 30px;
-    transition: 0.3s;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
     font-size: 130%;
+}
+
+.index-features-section ul {
+    margin-left: 0;
 }
 
 .index-features-section .button {
@@ -488,7 +504,7 @@ will stack on top of each other instead of putting them into a row, creating the
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    color: #C9F0FF;
+    color: #FFFFFF;
     text-transform: none;
     text-shadow: 0px 1px 5px #C9F0FF;
 }
@@ -581,13 +597,17 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .index-proposition-card {
-        box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);
+        /*box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.2);*/
+        /*box-shadow: 3px 3px 5px #FFFFFF inset, 0px 0px 5px 3px #393D3F;*/
+        box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 8px 3px #393D3F;
     }
 
 
     /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
     .index-proposition-card:hover {
-        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+        /*box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);*/
+        /*box-shadow: 3px 3px 5px #FFFFFF inset, 0px 0px 8px 8px #393D3F;*/
+        box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 12px 7px #393D3F;
     }
 }
 
@@ -664,7 +684,7 @@ will stack on top of each other instead of putting them into a row, creating the
         height: 200px;
         min-width: 200px;
         min-height: 200px;
-        box-shadow: 0px 0px 20px 20px #C9F0FF;
+        box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
     }
 
     /* The image is on flex-start so the text goes on flex-end*/
@@ -759,6 +779,10 @@ will stack on top of each other instead of putting them into a row, creating the
         width: 65%;
     }
 
+    .index-features-section ul {
+        margin-left: 5%;
+    }
+
     /*Increase button width to make the text more likely to be on one line.*/
     .index-features-section .button {
         width: 80%;
@@ -777,6 +801,7 @@ will stack on top of each other instead of putting them into a row, creating the
         height: 175px;
         min-width: 175px;
         min-height: 175px;
+        box-shadow: 4px 4px 8px #C9F0FF inset, 4px 4px 8px 4px #393D3F;
     }
 
     .hero-text {
@@ -811,7 +836,8 @@ will stack on top of each other instead of putting them into a row, creating the
         height: 150px;
         min-width: 150px;
         min-height: 150px;
-        box-shadow: 0px 0px 10px 10px #C9F0FF;
+        /*box-shadow: 0px 0px 10px 10px #C9F0FF;*/
+        box-shadow: 2px 2px 5px #C9F0FF inset, 2px 2px 5px 2px #393D3F;
     }
 
     .hero-text {
