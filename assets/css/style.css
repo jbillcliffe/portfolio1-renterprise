@@ -494,24 +494,25 @@ will stack on top of each other instead of putting them into a row, creating the
 .about-box-content {
     width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 3% auto;
+    margin: 0 auto;
+    padding: 4% 0;
 
 }
 
 .about-box-content p {
+    display: inline;
+    width: 100%;
     color: #C9F0FF;
     font-family: 'Hind', sans-serif;
     font-size: 150%;
-
 }
 
-/*.about-box h1 {
-    width: 80%;
-    background-color: rgba(45, 138, 96, 0.5);
-    color: #C9F0FF;
-    border-radius: 25px;
-}*/
+.about-box-content strong {
+    display: inline;
+}
+
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/
 /*For index-proposition-cards to try to keep the headers in one line */
@@ -758,6 +759,28 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 }
 
+@media screen and (max-width:600px) {
+
+
+    .content-container .about-box .about-box-header img {
+        display: none;
+        width: 0;
+    }
+
+    .about-box-header h1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #FFFFFF;
+        text-transform: none;
+        text-shadow: 0px 1px 5px #C9F0FF;
+    }
+
+    .about-box-content p {
+        font-size: 120%;
+    }
+}
+
 @media screen and (max-width:520px) {
 
     /*Adjust hero + font sizes in buttons + out of box font size*/
@@ -789,6 +812,7 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-features-section .button {
         font-size: 80%;
     }
+
 }
 
 @media screen and (max-width:440px) {
@@ -835,5 +859,23 @@ will stack on top of each other instead of putting them into a row, creating the
         height: auto;
         width: auto;
         line-height: 40px;
+    }
+
+    .about-box-header h1 {
+        font-size: 175%;
+    }
+
+    .about-box-content p {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .about-box-header h1 {
+        font-size: 130%;
+    }
+
+    .about-box-content p {
+        font-size: 80%;
     }
 }
