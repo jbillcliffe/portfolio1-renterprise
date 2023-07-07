@@ -470,6 +470,7 @@ will stack on top of each other instead of putting them into a row, creating the
 
 .about-box-header {
     display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 15px 20px;
     color: #C9F0FF;
@@ -502,7 +503,7 @@ will stack on top of each other instead of putting them into a row, creating the
 
 }
 
-.about-box-content p {
+.about-box-content span {
     display: inline;
     width: 100%;
     color: #C9F0FF;
@@ -622,6 +623,10 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 50%;
     }
 
+    .header-menu>ul {
+        font-size: 80%;
+    }
+
     .full-width-row {
         font-size: 110%;
     }
@@ -642,6 +647,24 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-features-section {
         font-size: 90%;
     }
+
+    .about-box-header {
+        flex-direction: column;
+    }
+
+    .about-box-header img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-box-header h1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width:760px) {
@@ -707,39 +730,37 @@ will stack on top of each other instead of putting them into a row, creating the
         position: absolute;
         visibility: hidden;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #2D8A60;
+        width: 100%;
         top: 75px;
         z-index: 100;
-        border-top: #393D3F 1px solid;
-        border-right: #393D3F 1px solid;
-        border-left: #393D3F 1px solid;
+        border: #393D3F 1px solid;
+        box-shadow: 0px 4px 9px 3px #393D3F;
     }
 
     .burger-btn:checked~ul {
         visibility: visible;
+        animation: fadeIn 0.5s;
     }
 
     .burger-btn:checked~ul li {
         position: relative;
         background: #2D8A60;
-        width: 100px;
-        height: 30px;
-        font-size: 80%;
+        width: 25%;
+        height: auto;
         position: relative;
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-content: center;
+        justify-content: center;
         margin-right: 0px;
-        border-bottom: #393D3F 1px solid;
+        padding: 1%;
     }
 
     .burger-btn:checked~ul li a {
-        clear: both;
-        position: relative;
-        display: inherit;
-        width: 100px;
-        height: 30px;
+        padding: 1%;
+        height: auto;
     }
 
     .active {
@@ -777,7 +798,7 @@ will stack on top of each other instead of putting them into a row, creating the
         text-shadow: 0px 1px 5px #C9F0FF;
     }
 
-    .about-box-content p {
+    .about-box-content span {
         font-size: 120%;
     }
 }
@@ -814,6 +835,15 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 80%;
     }
 
+    .burger-btn:checked~ul {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .burger-btn:checked~ul li {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:440px) {
@@ -866,7 +896,7 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 175%;
     }
 
-    .about-box-content p {
+    .about-box-content span {
         font-size: 100%;
     }
 }
@@ -876,7 +906,7 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 130%;
     }
 
-    .about-box-content p {
+    .about-box-content span {
         font-size: 80%;
     }
 }
