@@ -500,6 +500,50 @@ will stack on top of each other instead of putting them into a row, creating the
     display: inline;
 }
 
+/*contact.html*/
+.contact-form-container,
+.contact-details-container {
+    width: 80%;
+    background-color: #2D8A60;
+    border-radius: 25px;
+    margin: 3% auto;
+    box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details-container {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+}
+
+.contact-form-header {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-details-map {
+    width: 60%;
+    contain: content;
+}
+
+.contact-details-map>iframe {
+    /*margin: 0 3%;*/
+    margin: 25px 25px;
+    border-radius: 25px;
+
+}
+
+.contact-details-company {
+    width: 40%;
+    margin: 25px 25px;
+    text-align: end;
+}
+
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/
 /*For index-proposition-cards to try to keep the headers in one line */
