@@ -19,7 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- font awesome kit-->
+    <script src="https://kit.fontawesome.com/446693abe9.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <title>Renterprise - Leading Rental CRM System</title>
 </head>
 
@@ -69,8 +71,8 @@
                         <input type="text" id="contact-form-name" placeholder="Enter Your Name" required>
                     </div>
                     <div class="contact-form-row">
-                        <label for="contact-form-phone"> Phone Number : </label>
-                        <select></select>
+                        <label for="contact-form-phone"> Phone Number : +(</label>)
+                        <select id="contact-form-country-codes" class="contact-form-country-codes"></select>
                         <input type="tel" id="contact-form-phone" pattern="[0-9]{4} [0-9]{6}"
                             placeholder="Enter Phone Number" required>
                     </div>
@@ -135,8 +137,30 @@
             </li>
         </ul>
     </footer>
-    <!-- font awesome kit-->
-    <script src="https://kit.fontawesome.com/446693abe9.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        console.log($.getJSON('assets/json/country.json'));
+        $.getJSON('assets/json/country.json', function (data) {
+            console.log(data);
+            $.each(data, function (index, value) {
+
+                var option = "<option value=\"" + value.phone + "\">(+" + value.phone + ") " + value.name + "</option>";
+
+                if (index == 0) {
+                    console.log(value);
+                    console.log(option);
+                }
+
+
+                $(option).appendTo("#contact-form-country-codes");
+            });
+
+        });
+    </script>
+
+
+
 </body>
 
 </html>
