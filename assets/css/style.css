@@ -121,7 +121,8 @@ header {
     display: flex;
     flex-direction: row;
     margin-left: 0;
-    box-shadow: 0px 0px 3px 3px #393D3F;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 3px 3px rgba(57, 61, 63, 0.8);
 }
 
 /* The "a" tag which holds the logo - 15% of page width and minimum height to match header
@@ -221,7 +222,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #2D8A60;
-    box-shadow: 0px 3px 3px -1px #C9F0FF inset, 0px -2px 5px 5px #393D3F;
+    box-shadow: 0px -3px 1px 0px rgba(57, 61, 63, 0.8);
+    margin-top: 25px;
 }
 
 /* social-networks ul css set the text to be centre aligned in a flex row 
@@ -270,7 +272,7 @@ any overflow to stop it escape the container. BG white in colour.*/
     overflow: hidden;
     position: relative;
     background-color: #7785AC;
-    box-shadow: 0px 0px 3px 3px #393D3F;
+    box-shadow: 0px 3px 1px 0px rgba(57, 61, 63, 0.8);
 }
 
 /* The image is positioned at the start of the flex container (hero-container)
@@ -329,6 +331,7 @@ auto left/right margins to centre the content.*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
 }
 
 /*out-the-box section on the index page, set a shaddow at the base to create a pop out effect*/
@@ -338,9 +341,8 @@ auto left/right margins to centre the content.*/
     flex-wrap: wrap;
     flex-direction: column;
     padding: 10px 0 5px 0;
-    box-shadow: 0px 0px 3px 3px #393D3F;
+    box-shadow: 0px 0px 3px 3px rgba(57, 61, 63, 0.8);
     margin: 0 0 10px 0;
-
 }
 
 .proposition-holder {
@@ -443,7 +445,7 @@ will stack on top of each other instead of putting them into a row, creating the
 }
 
 .index-features-section .button {
-    width: 25%;
+    width: 80%;
 }
 
 /*about.html*/
@@ -525,6 +527,7 @@ will stack on top of each other instead of putting them into a row, creating the
 .contact-form-header {
     width: 100%;
     text-align: center;
+    padding: 10px 0;
 }
 
 .contact-details-map {
@@ -545,6 +548,11 @@ will stack on top of each other instead of putting them into a row, creating the
     text-align: end;
 }
 
+.contact-details-email>a,
+.contact-details-phone>a {
+    color: #FFFFFF;
+}
+
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/
 /*For index-proposition-cards to try to keep the headers in one line */
@@ -556,9 +564,9 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     /*Increase button width to make the text more likely to be on one line.*/
-    .index-features-section .button {
+    /*.index-features-section .button {
         width: 35%;
-    }
+    }*/
 }
 
 /*For index-proposition-cards to try to keep the headers in one line */
@@ -593,9 +601,9 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     /*Increase button width to put text on one line.*/
-    .index-features-section .button {
+    /*.index-features-section .button {
         width: 35%;
-    }
+    }*/
 }
 
 /*If the index-proposition-cards get too small, they get out of line*/
@@ -624,9 +632,9 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 140%;
     }
 
-    .index-features-section .button {
+    /*.index-features-section .button {
         width: 50%;
-    }
+    }*/
 }
 
 @media screen and (max-width:950px) {
@@ -637,9 +645,9 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     /*Increase button width to make the text more likely to be on one line.*/
-    .index-features-section .button {
+    /*.index-features-section .button {
         width: 60%;
-    }
+    }*/
 }
 
 @media screen and (max-width:850px) {
@@ -806,26 +814,22 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     /*Increase button width to make the text more likely to be on one line.*/
-    .index-features-section .button {
+    /*.index-features-section .button {
         width: 80%;
-    }
+    }*/
 }
 
 @media screen and (max-width:600px) {
 
 
-    .content-container .about-box .about-box-header img {
+    /*.content-container .about-box .about-box-header img {
         display: none;
         width: 0;
-    }
+    }*/
 
     .about-box-header h1 {
-        display: flex;
         justify-content: center;
-        width: 100%;
-        color: #FFFFFF;
-        text-transform: none;
-        text-shadow: 0px 1px 5px #000000;
+        font-size: 200%;
     }
 
     .about-box-content span {
@@ -874,7 +878,16 @@ will stack on top of each other instead of putting them into a row, creating the
     .burger-btn:checked~ul li {
         width: 100%;
     }
+
+    .about-box-header h1 {
+        font-size: 175%;
+    }
+
+    .about-box-content span {
+        font-size: 100%;
+    }
 }
+
 
 @media screen and (max-width:440px) {
 
@@ -906,11 +919,6 @@ will stack on top of each other instead of putting them into a row, creating the
         white-space: pre-wrap;
     }
 
-    /*alter button size*/
-    .index-features-section .button {
-        width: 100%;
-    }
-
     footer {
         justify-content: center;
     }
@@ -923,17 +931,28 @@ will stack on top of each other instead of putting them into a row, creating the
     }
 
     .about-box-header h1 {
-        font-size: 175%;
+        font-size: 120%;
     }
 
     .about-box-content span {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:350px) {
+    .content-container .about-box .about-box-header img {
+        display: none;
+        width: 0;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .index-features-section .button {
+        font-size: 65%;
+    }
+
     .about-box-header h1 {
-        font-size: 130%;
+        font-size: 110%;
     }
 
     .about-box-content span {
