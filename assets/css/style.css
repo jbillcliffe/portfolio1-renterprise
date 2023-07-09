@@ -130,6 +130,7 @@ minimum width to match logo */
 header>a {
     height: 100px;
     width: 100px;
+    margin-left: 3%;
 }
 
 /* Logo style - Get width from parent ("a" tag) 0 margin within its container (header) 
@@ -138,7 +139,7 @@ smaller, to the point it cannot be seen. Which it will without this setting */
 .header-logo {
     height: 100px;
     width: 100px;
-    margin-left: 50px;
+
     min-height: 100px;
     min-width: 100px;
     background-color: #1D5D40;

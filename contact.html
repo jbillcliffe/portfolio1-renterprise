@@ -71,7 +71,7 @@
                         <input type="text" id="contact-form-name" placeholder="Enter Your Name" required>
                     </div>
                     <div class="contact-form-row">
-                        <label for="contact-form-phone"> Phone Number : +(</label>)
+                        <label for="contact-form-phone"> Phone Number : </label>
                         <select id="contact-form-country-codes" class="contact-form-country-codes"></select>
                         <input type="tel" id="contact-form-phone" pattern="[0-9]{4} [0-9]{6}"
                             placeholder="Enter Phone Number" required>
@@ -142,10 +142,51 @@
     <script>
 
         $.getJSON('assets/json/country.json', function (data) {
+
+            let topoptions = [];
+            let otheroptions = [];
+            let option = "";
+
             $.each(data, function (index, value) {
-                var option = "<option value=\"" + value.phone + "\">(+" + value.phone + ") " + value.name + "</option>";
-                $(option).appendTo("#contact-form-country-codes");
+
+
+                if (value.code == "GB" || value.code == "US") {
+                    topoptions.push("<option value=\"" + value.phone + "\" label=\"+(" + value.phone + ")\"\">(+" + value.phone + ") " + value.name + "</option>");
+                } else {
+                    otheroptions.push("(<option value=\"" + value.phone + "\" label=\"+(" + value.phone + ")\"\">(+" + value.phone + ") " + value.name + "</option>");
+                }
             });
+
+            /*for (var i = 0; i < 2; i++) {
+                if (i == 0) {
+                    option = "<optgroup label=\"Most Common\"> " + topoptions[i];
+                } else {
+                    option = topoptions[i] + "</optgroup>";;
+                }
+                $(option).appendTo("#contact-form-country-codes");
+            }*/
+
+            option = "<optgroup label=\"Most Common\"> " +
+                topoptions[0] +
+                topoptions[1] +
+                "</optgroup>";
+            $(option).appendTo("#contact-form-country-codes");
+            console.log(option);
+
+            for (var i = 0; i < otheroptions.length; i++) {
+
+                if (i == 0) {
+                    option = "<optgroup label=\"OtherCountries\">" + otheroptions[i];
+                } else if (i == (otheroptions.length - 1)) {
+                    option = otheroptions[i] + "</optgroup>";
+                } else {
+                    option = otheroptions[i];
+                }
+
+                $(option).appendTo("#contact-form-country-codes");
+            }
+
+
 
         });
     </script>
