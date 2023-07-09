@@ -30,7 +30,7 @@
     <header>
         <!-- Logo to be a return link to home page (index)-->
         <a href="index.html" target="_self">
-            <img class="header-logo" src="assets/images/logo.webp" alt="Renterprise"
+            <img class="header-logo" src="assets/images/logo-100.webp" alt="Renterprise"
                 aria-label="Renterprise CRM software home page">
         </a>
         <!-- Navigation bar within the header (to be used on all pages)-->
@@ -140,19 +140,10 @@
 
 
     <script>
-        console.log($.getJSON('assets/json/country.json'));
+
         $.getJSON('assets/json/country.json', function (data) {
-            console.log(data);
             $.each(data, function (index, value) {
-
                 var option = "<option value=\"" + value.phone + "\">(+" + value.phone + ") " + value.name + "</option>";
-
-                if (index == 0) {
-                    console.log(value);
-                    console.log(option);
-                }
-
-
                 $(option).appendTo("#contact-form-country-codes");
             });
 
