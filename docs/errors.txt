@@ -1,0 +1,13 @@
+1.
+ERR - Select drop down on contact form kept grouping wrong for the "other countries", closing the group after the first option and leaving the rest ungrouped
+FIX - First time using .getJSON, found it as a placement error for the appendTo() function. Also changed methodology to create the string as a whole and then
+use appendTo(), functionality is then correct.
+
+2.
+ERR - WAVE report showed that original green colour (#2D8A60) was not providing enough contrast with the white text.
+FIX - Swapped it for #1D5D40 which is a deeper green. This in turn meant redesign of the logo to incorporate the colour too
+
+3. 
+ERR - Logo as one size and a rectangle was becoming an issue.
+FIX - Logo changed to a square, this makes scaling easier but also not a complicated change for CSS, as the background on the logo was the same as the background
+colour of most elements in the web page.

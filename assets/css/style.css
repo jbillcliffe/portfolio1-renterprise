@@ -105,10 +105,25 @@ h3 {
 
 /* Default for p tag is the logo in the font, not used for headers as it is slim. H1 should be
 clear and emphasised for its importance */
-p {
+p,
+label {
     font-family: 'Hind', sans-serif;
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
+}
+
+input,
+select {
+    font-family: 'Hind', sans-serif;
+    color: #000000;
+    font-size: 100%;
+}
+
+select>optgroup,
+select>optgroup>option {
+    font-family: 'Hind', sans-serif;
+    color: #000000;
+    font-size: 85%;
 }
 
 /* header styling -
@@ -531,6 +546,49 @@ will stack on top of each other instead of putting them into a row, creating the
     padding: 10px 0;
 }
 
+.contact-form-row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contact-form-container label {
+    font-size: 120%;
+}
+
+.contact-form-outer-label {
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.contact-form-first-radio-label {
+    margin-left: 1%;
+    margin-right: 5px;
+}
+
+.contact-form-radio-label {
+    margin-left: 2%;
+    margin-right: 5px;
+}
+
+#contact-form-country-codes {
+    width: 50px;
+}
+
+#contact-form-country-codes option::after {
+
+    content: attr("value");
+}
+
+#contact-form-country-codes>optgroup {
+    width: 100px;
+}
+
+/*.contact-form-radio-label {*/
+/*.contact-form-container select {
+    margin: 1%;
+}*/
+
 .contact-details-map {
     width: 60%;
     contain: content;
@@ -553,6 +611,7 @@ will stack on top of each other instead of putting them into a row, creating the
 .contact-details-phone>a {
     color: #FFFFFF;
 }
+
 
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/

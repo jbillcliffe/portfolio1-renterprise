@@ -67,23 +67,29 @@
             <div class="contact-form-input">
                 <form action="https://formdump.codeinstitute.net/" method="POST">
                     <div class="contact-form-row">
-                        <label for="contact-form-name"> Name : </label>
+                        <label for="contact-form-name" class="contact-form-outer-label"> Name : </label>
                         <input type="text" id="contact-form-name" placeholder="Enter Your Name" required>
                     </div>
                     <div class="contact-form-row">
-                        <label for="contact-form-phone"> Phone Number : </label>
+                        <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number : </label>
                         <select id="contact-form-country-codes" class="contact-form-country-codes"></select>
                         <input type="tel" id="contact-form-phone" pattern="[0-9]{4} [0-9]{6}"
                             placeholder="Enter Phone Number" required>
                     </div>
                     <div class="contact-form-row">
-                        <label for="contact-form-email"> Email : </label>
-                        <input type="email" id="contact-form-email" pattern="[0-9]{4} [0-9]{6}"
-                            placeholder="Enter Phone Number" required>
+                        <label for="contact-form-email" class="contact-form-outer-label"> Email : </label>
+                        <input type="email" id="contact-form-email" placeholder="Enter Email Address" required>
                     </div>
+                    <div class="contact-form-row">
+                        <label class="contact-form-outer-label"> About? : </label>
+                        <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
+                        <input type="radio" id="reason1" name="reason" value="General">
+                        <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
+                        <input type="radio" id="reason2" name="reason" value="Pricing">
+                        <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
+                        <input type="radio" id="reason3" name="reason" value="Technical">
 
-
-            </div>
+                    </div>
         </section>
         <section class="contact-details-container">
             <div class="contact-details-map">
@@ -140,55 +146,52 @@
 
 
     <script>
-
+        //top options group
+        let topoptions = [];
+        //all other options group
+        let otheroptions = [];
+        //get JSON data from the country.json file
         $.getJSON('assets/json/country.json', function (data) {
-
-            let topoptions = [];
-            let otheroptions = [];
-            let option = "";
-
+            //for each json object
             $.each(data, function (index, value) {
-
-
+                //if United Kingdom or United states (picked as most likely to be most common on an English language written site)
                 if (value.code == "GB" || value.code == "US") {
-                    topoptions.push("<option value=\"" + value.phone + "\" label=\"+(" + value.phone + ")\"\">(+" + value.phone + ") " + value.name + "</option>");
+                    //create an array entry for US/UK option to go into contact-form-country-codes <select>
+                    topoptions.push("<option value=\"" + value.phone + "\" label=\"" + value.name + " +(" + value.phone + ")\"></option>");
                 } else {
-                    otheroptions.push("(<option value=\"" + value.phone + "\" label=\"+(" + value.phone + ")\"\">(+" + value.phone + ") " + value.name + "</option>");
+                    //create an array entry for any other country option to go into contact-form-country-codes <select>
+                    otheroptions.push("<option value=\"" + value.phone + "\" label=\"" + value.name + " +(" + value.phone + ")\"></option>");
                 }
             });
-
-            /*for (var i = 0; i < 2; i++) {
-                if (i == 0) {
-                    option = "<optgroup label=\"Most Common\"> " + topoptions[i];
-                } else {
-                    option = topoptions[i] + "</optgroup>";;
-                }
-                $(option).appendTo("#contact-form-country-codes");
-            }*/
-
-            option = "<optgroup label=\"Most Common\"> " +
-                topoptions[0] +
-                topoptions[1] +
-                "</optgroup>";
-            $(option).appendTo("#contact-form-country-codes");
-            console.log(option);
-
-            for (var i = 0; i < otheroptions.length; i++) {
-
-                if (i == 0) {
-                    option = "<optgroup label=\"OtherCountries\">" + otheroptions[i];
-                } else if (i == (otheroptions.length - 1)) {
-                    option = otheroptions[i] + "</optgroup>";
-                } else {
-                    option = otheroptions[i];
-                }
-
-                $(option).appendTo("#contact-form-country-codes");
-            }
-
-
-
+            //move to a function at the end of the .each cycle to create a string to append to the <select> element
+            appendCountryPhoneCodes();
         });
+
+        function appendCountryPhoneCodes() {
+            //default empty string
+            let option = "";
+
+            //By using += a string is concatenated, which can be appended in one block
+            //start building the string, create first group
+            option += "<optgroup label=\"Common Countries\"> ";
+            //for loop to go through array to add each option to the string
+            for (var i = 0; i < topoptions.length; i++) {
+                //concat the top group options into the string
+                option += topoptions[i];
+            }
+            //concat the terminating of the top group and initiating of the others group
+            option += "</optgroup>" +
+                "<optgroup label=\"Other Countries\">";
+            //for loop to go through array to add each option to the string
+            for (var i = 0; i < otheroptions.length; i++) {
+                //concat the other group options into the string
+                option += otheroptions[i];
+            }
+            //concat the terminating of the others group
+            option += "</optgroup>";
+            //append the whole string to the <select> element
+            $(option).appendTo("#contact-form-country-codes");
+        }
     </script>
 
 
