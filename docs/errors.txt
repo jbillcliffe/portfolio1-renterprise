@@ -11,3 +11,6 @@ FIX - Swapped it for #1D5D40 which is a deeper green. This in turn meant redesig
 ERR - Logo as one size and a rectangle was becoming an issue.
 FIX - Logo changed to a square, this makes scaling easier but also not a complicated change for CSS, as the background on the logo was the same as the background
 colour of most elements in the web page.
+
+4. ERR - Country code width needs to be less than full dropdown width, then show just the value (eg. +44)
+ 
