@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- font awesome kit-->
     <script src="https://kit.fontawesome.com/446693abe9.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Renterprise - Leading Rental CRM System</title>
 </head>
 
@@ -72,9 +72,9 @@
                     </div>
                     <div class="contact-form-row">
                         <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number : </label>
-                        <select id="contact-form-country-codes" class="contact-form-country-codes"></select>
-                        <input type="tel" id="contact-form-phone" pattern="[0-9]{4} [0-9]{6}"
-                            placeholder="Enter Phone Number" required>
+                        <select id="contact-form-country-codes" class="contact-form-country-codes"
+                            onchange="countryCodeSelected();"></select>
+                        <input type="text" id="contact-form-phone" placeholder="Enter Phone Number" required>
                     </div>
                     <div class="contact-form-row">
                         <label for="contact-form-email" class="contact-form-outer-label"> Email : </label>
@@ -83,13 +83,15 @@
                     <div class="contact-form-row">
                         <label class="contact-form-outer-label"> About? : </label>
                         <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
-                        <input type="radio" id="reason1" name="reason" value="General">
+                        <input type="radio" id="reason1" name="reason" value="General" required>
                         <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
                         <input type="radio" id="reason2" name="reason" value="Pricing">
                         <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
                         <input type="radio" id="reason3" name="reason" value="Technical">
 
                     </div>
+                    <input type="submit">
+                </form>
         </section>
         <section class="contact-details-container">
             <div class="contact-details-map">
@@ -150,6 +152,8 @@
         let topoptions = [];
         //all other options group
         let otheroptions = [];
+        //string holder for country phone code
+        let countrycodePhoneText = "";
         //get JSON data from the country.json file
         $.getJSON('assets/json/country.json', function (data) {
             //for each json object
@@ -191,6 +195,18 @@
             option += "</optgroup>";
             //append the whole string to the <select> element
             $(option).appendTo("#contact-form-country-codes");
+        }
+
+        function countryCodeSelected() {
+            //set the text to have the value of the dropdown value
+            countrycodePhoneText = "+(" + $("#contact-form-country-codes").val() + ") ";
+            console.log(countrycodePhoneText);
+            $("#contact-form-phone").prop("disabled", false);
+            $("#contact-form-phone").on('input', function () {
+                if (String($(this).val()).indexOf(countrycodePhoneText) == -1) {
+                    $(this).val(countrycodePhoneText);
+                }
+            });
         }
     </script>
 

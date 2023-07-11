@@ -12,5 +12,10 @@ ERR - Logo as one size and a rectangle was becoming an issue.
 FIX - Logo changed to a square, this makes scaling easier but also not a complicated change for CSS, as the background on the logo was the same as the background
 colour of most elements in the web page.
 
-4. ERR - Country code width needs to be less than full dropdown width, then show just the value (eg. +44)
+4. 
+ERR - Organising pattern/required for telephone is troublesome!
+FIX - Removed from scope due to complexity in time scale. Would have lost a lot of time on a relatively small thing. So, it is a required text field and nothing more.
+Doing a fixed pattern for UK phone numbers would have been a lot simpler with one pattern. But it would be optimal to have a saved pattern in JSON
+for each country dialing code. I figure, that if people want to contact, they will really make sure they enter the right number!
+
  
