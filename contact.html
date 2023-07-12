@@ -68,7 +68,8 @@
                 <form action="https://formdump.codeinstitute.net/" method="POST">
                     <div class="contact-form-row">
                         <label for="contact-form-name" class="contact-form-outer-label"> Name : </label>
-                        <input type="text" id="contact-form-name" placeholder="Enter Your Name" required>
+                        <input type="text" id="contact-form-name" class="contact-form-input"
+                            placeholder="Enter Your Name" required>
                     </div>
                     <div class="contact-form-row">
                         <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number : </label>
@@ -78,19 +79,25 @@
                     </div>
                     <div class="contact-form-row">
                         <label for="contact-form-email" class="contact-form-outer-label"> Email : </label>
-                        <input type="email" id="contact-form-email" placeholder="Enter Email Address" required>
+                        <input type="email" id="contact-form-email" class="contact-form-input"
+                            placeholder="Enter Email Address" required>
                     </div>
-                    <div class="contact-form-row">
+                    <div class="contact-form-row radio-class">
                         <label class="contact-form-outer-label"> About? : </label>
-                        <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
-                        <input type="radio" id="reason1" name="reason" value="General" required>
-                        <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
-                        <input type="radio" id="reason2" name="reason" value="Pricing">
-                        <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
-                        <input type="radio" id="reason3" name="reason" value="Technical">
-
+                        <div class="contact-form-radio-row">
+                            <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
+                            <input type="radio" id="reason1" name="reason" value="General" required>
+                        </div>
+                        <div class="contact-form-radio-row">
+                            <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
+                            <input type="radio" id="reason2" name="reason" value="Pricing">
+                        </div>
+                        <div class="contact-form-radio-row">
+                            <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
+                            <input type="radio" id="reason3" name="reason" value="Technical">
+                        </div>
                     </div>
-                    <input type="submit">
+                    <input type="submit" class="button">
                 </form>
         </section>
         <section class="contact-details-container">
@@ -161,10 +168,10 @@
                 //if United Kingdom or United states (picked as most likely to be most common on an English language written site)
                 if (value.code == "GB" || value.code == "US") {
                     //create an array entry for US/UK option to go into contact-form-country-codes <select>
-                    topoptions.push("<option value=\"" + value.phone + "\" label=\"" + value.name + " +(" + value.phone + ")\"></option>");
+                    topoptions.push("<option value=\"" + value.phone + "\" label=\" +(" + value.phone + ") ---  " + value.name + "\"></option>");
                 } else {
                     //create an array entry for any other country option to go into contact-form-country-codes <select>
-                    otheroptions.push("<option value=\"" + value.phone + "\" label=\"" + value.name + " +(" + value.phone + ")\"></option>");
+                    otheroptions.push("<option value=\"" + value.phone + "\" label=\" +(" + value.phone + ") ---  " + value.name + "\"></option>");
                 }
             });
             //move to a function at the end of the .each cycle to create a string to append to the <select> element
