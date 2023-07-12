@@ -64,40 +64,35 @@
             <div class="contact-form-header">
                 <h2>Contact Us</h2>
             </div>
-            <div class="contact-form-input">
+            <div class="contact-form">
                 <form action="https://formdump.codeinstitute.net/" method="POST">
+                    <label for="contact-form-name" class="contact-form-outer-label"> Name </label>
+                    <input type="text" id="contact-form-name" class="contact-form-input" placeholder="Enter Your Name"
+                        required>
+                    <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
                     <div class="contact-form-row">
-                        <label for="contact-form-name" class="contact-form-outer-label"> Name : </label>
-                        <input type="text" id="contact-form-name" class="contact-form-input"
-                            placeholder="Enter Your Name" required>
-                    </div>
-                    <div class="contact-form-row">
-                        <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number : </label>
                         <select id="contact-form-country-codes" class="contact-form-country-codes"
                             onchange="countryCodeSelected();"></select>
-                        <input type="text" id="contact-form-phone" placeholder="Enter Phone Number" required>
+                        <input type="text" id="contact-form-phone" class="contact-form-phone"
+                            placeholder="Enter Phone Number" required>
                     </div>
-                    <div class="contact-form-row">
-                        <label for="contact-form-email" class="contact-form-outer-label"> Email : </label>
-                        <input type="email" id="contact-form-email" class="contact-form-input"
-                            placeholder="Enter Email Address" required>
-                    </div>
+                    <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
+                    <input type="email" id="contact-form-email" class="contact-form-input"
+                        placeholder="Enter Email Address" required>
+                    <label for="reason" class="contact-form-outer-label"> Reason For Contact </label>
                     <div class="contact-form-row radio-class">
-                        <label class="contact-form-outer-label"> About? : </label>
                         <div class="contact-form-radio-row">
                             <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
                             <input type="radio" id="reason1" name="reason" value="General" required>
-                        </div>
-                        <div class="contact-form-radio-row">
+
                             <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
                             <input type="radio" id="reason2" name="reason" value="Pricing">
-                        </div>
-                        <div class="contact-form-radio-row">
+
                             <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
                             <input type="radio" id="reason3" name="reason" value="Technical">
                         </div>
                     </div>
-                    <input type="submit" class="button">
+                    <input type="submit" class="button contact-form-button">
                 </form>
         </section>
         <section class="contact-details-container">
