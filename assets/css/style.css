@@ -619,21 +619,29 @@ will stack on top of each other instead of putting them into a row, creating the
     justify-content: flex-end;
 }
 
+/*https: //www.w3schools.com/howto/howto_css_responsive_iframes.asp
+For how to make the iframe responsive, rather than cut the content at fixed pixels*/
+
 .contact-details-container {
     display: flex;
     flex-direction: row;
-    height: 450px;
+    height: auto;
 }
 
 .contact-details-map {
     width: 60%;
-    contain: content;
+    /*contain: content;*/
+    margin: 25px 0 25px 25px;
+    /*width: 100%;*/
+    height: 400px;
 }
 
 .contact-details-map>iframe {
     /*margin: 0 3%;*/
-    margin: 25px 25px;
-    border-radius: 25px;
+
+    width: 100%;
+    height: 400px;
+    /*height: 100%;*/
 
 }
 
@@ -790,6 +798,26 @@ will stack on top of each other instead of putting them into a row, creating the
 
     .index-features-section {
         font-size: 90%;
+    }
+
+    .contact-details-container {
+        /*display: flex;*/
+        flex-direction: column;
+    }
+
+    .contact-details-map {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+
+    }
+
+    .contact-details-map>iframe {
+
+        position: relative;
+
+
     }
 }
 
