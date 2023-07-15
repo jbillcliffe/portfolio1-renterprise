@@ -465,7 +465,8 @@ will stack on top of each other instead of putting them into a row, creating the
 }
 
 /*about.html*/
-.about-box {
+.about-box,
+.thanks-box {
     width: 80%;
     background-color: #1D5D40;
     color: #C9F0FF;
@@ -474,7 +475,8 @@ will stack on top of each other instead of putting them into a row, creating the
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
 }
 
-.about-box-header {
+.about-box-header,
+.thanks-box-header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -482,14 +484,16 @@ will stack on top of each other instead of putting them into a row, creating the
     color: #C9F0FF;
 }
 
-.about-box-header img {
+.about-box-header img,
+.thanks-box-header img {
     margin-left: 25px;
     justify-content: flex-start;
     width: 20%;
     height: 20%;
 }
 
-.about-box-header h1 {
+.about-box-header h1,
+.thanks-box-header h1 {
     margin-right: 25px;
     display: flex;
     justify-content: flex-end;
@@ -497,7 +501,8 @@ will stack on top of each other instead of putting them into a row, creating the
     width: 80%;
 }
 
-.about-box-content {
+.about-box-content,
+.thanks-box-content {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -507,7 +512,8 @@ will stack on top of each other instead of putting them into a row, creating the
 
 }
 
-.about-box-content span {
+.about-box-content span,
+.thanks-box-content span {
     display: inline;
     width: 100%;
     color: #FFFFFF;
@@ -516,7 +522,8 @@ will stack on top of each other instead of putting them into a row, creating the
     text-shadow: 0px 1px 5px #000000;
 }
 
-.about-box-content strong {
+.about-box-content strong,
+.thanks-box-content strong {
     display: inline;
 }
 
@@ -651,11 +658,6 @@ will stack on top of each other instead of putting them into a row, creating the
     .out-the-box .button {
         width: 20%;
     }
-
-    /*Increase button width to make the text more likely to be on one line.*/
-    /*.index-features-section .button {
-        width: 35%;
-    }*/
 }
 
 /*For index-proposition-cards to try to keep the headers in one line */
@@ -720,10 +722,6 @@ will stack on top of each other instead of putting them into a row, creating the
     .button {
         font-size: 140%;
     }
-
-    /*.index-features-section .button {
-        width: 50%;
-    }*/
 }
 
 @media screen and (max-width:950px) {
@@ -732,26 +730,25 @@ will stack on top of each other instead of putting them into a row, creating the
     .out-the-box .button {
         width: 40%;
     }
-
-    /*Increase button width to make the text more likely to be on one line.*/
-    /*.index-features-section .button {
-        width: 60%;
-    }*/
 }
 
 @media screen and (max-width:890px) {
-    .about-box-header {
+
+    .about-box-header,
+    .thanks-box-header {
         flex-direction: column;
     }
 
-    .about-box-header img {
+    .about-box-header img,
+    .thanks-box-header img {
         width: 50%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .about-box-header h1 {
+    .about-box-header h1,
+    .thanks-box-header h1 {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -903,27 +900,18 @@ will stack on top of each other instead of putting them into a row, creating the
     .index-features-section ul {
         margin-left: 5%;
     }
-
-    /*Increase button width to make the text more likely to be on one line.*/
-    /*.index-features-section .button {
-        width: 80%;
-    }*/
 }
 
 @media screen and (max-width:600px) {
 
-
-    /*.content-container .about-box .about-box-header img {
-        display: none;
-        width: 0;
-    }*/
-
-    .about-box-header h1 {
+    .about-box-header h1,
+    .thanks-box-header h1 {
         justify-content: center;
         font-size: 200%;
     }
 
-    .about-box-content span {
+    .about-box-content span,
+    .thanks-box-content span {
         font-size: 120%;
     }
 }
@@ -970,11 +958,13 @@ will stack on top of each other instead of putting them into a row, creating the
         width: 100%;
     }
 
-    .about-box-header h1 {
+    .about-box-header h1,
+    .thanks-box-header h1 {
         font-size: 175%;
     }
 
-    .about-box-content span {
+    .about-box-content span,
+    .thanks-box-content span {
         font-size: 100%;
     }
 }
@@ -1021,11 +1011,13 @@ will stack on top of each other instead of putting them into a row, creating the
         line-height: 40px;
     }
 
-    .about-box-header h1 {
+    .about-box-header h1,
+    .thanks-box-header h1 {
         font-size: 120%;
     }
 
-    .about-box-content span {
+    .about-box-content span,
+    .thanks-box-content span {
         font-size: 90%;
     }
 }
@@ -1042,11 +1034,13 @@ will stack on top of each other instead of putting them into a row, creating the
         font-size: 65%;
     }
 
-    .about-box-header h1 {
+    .about-box-header h1,
+    .thanks-box-header h1 {
         font-size: 110%;
     }
 
-    .about-box-content span {
+    .about-box-content span,
+    .thanks-box-content span {
         font-size: 80%;
     }
 }

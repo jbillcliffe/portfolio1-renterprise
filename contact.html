@@ -34,7 +34,6 @@
                 aria-label="Renterprise CRM software home page">
         </a>
         <!-- Navigation bar within the header (to be used on all pages)-->
-
         <nav class="header-menu">
             <input class="burger-btn" type="checkbox" id="burger-btn" />
             <label class="burger-icon" for="burger-btn" id="burger-icon"><span class="burger-class"><i
@@ -57,23 +56,25 @@
         </nav>
     </header>
     <main>
-        <!--PAGE CONTENT-->
-        <!-- DUMP HERE <form action="https://formdump.codeinstitute.net/" method="post"> -->
-        <!--MAP HERE <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589082.4645282072!2d-4.774108739639683!3d51.872095865011886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487102a52d6e8847%3A0x3ebbe63d52bffcd3!2sTewkesbury%20Abbey!5e0!3m2!1sen!2suk!4v1688773889091!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
         <section class="contact-form-container">
             <div class="contact-form-header">
                 <h2>Contact Us</h2>
             </div>
             <div class="contact-form">
-                <form action="https://formdump.codeinstitute.net/" method="POST">
+                <!-- for assessment purposes, the "displayThankYou" function loads a thank you page behind the form dump loading
+                     in a new window showing the data posted. The idea of creating my own php page with html embedded to keep the
+                      styling was going to be the plan. However, it was not possible as setting up a php server within the codeanywhere
+                       environment was not something I would have been comfortable with, nor would I possibly have had the time-->
+                <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank"
+                    onsubmit="displayThankYou()">
                     <label for="contact-form-name" class="contact-form-outer-label"> Name </label>
-                    <input type="text" id="contact-form-name" class="contact-form-input" placeholder="Enter Your Name"
-                        required>
+                    <input type="text" id="contact-form-name" name="name" class="contact-form-input"
+                        placeholder="Enter Your Name" required>
                     <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
                     <div class="contact-form-row">
-                        <select id="contact-form-country-codes" class="contact-form-country-codes"
+                        <select id="contact-form-country-codes" name="country-code" class="contact-form-country-codes"
                             onchange="countryCodeSelected();"></select>
-                        <input type="text" id="contact-form-phone" class="contact-form-phone"
+                        <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
                             placeholder="Enter Phone Number" required>
                     </div>
                     <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
@@ -209,6 +210,13 @@
                     $(this).val(countrycodePhoneText);
                 }
             });
+        }
+
+        function displayThankYou() {
+
+            setTimeout(function () {
+                window.location.href = "thanks.html";
+            }, 200);
         }
     </script>
 
