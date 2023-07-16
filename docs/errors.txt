@@ -17,5 +17,3 @@ ERR - Organising pattern/required for telephone is troublesome!
 FIX - Removed from scope due to complexity in time scale. Would have lost a lot of time on a relatively small thing. So, it is a required text field and nothing more.
 Doing a fixed pattern for UK phone numbers would have been a lot simpler with one pattern. But it would be optimal to have a saved pattern in JSON
 for each country dialing code. I figure, that if people want to contact, they will really make sure they enter the right number!
-
- 
