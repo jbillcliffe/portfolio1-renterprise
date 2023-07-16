@@ -60,54 +60,50 @@
             <div class="contact-form-header">
                 <h2>Contact Us</h2>
             </div>
-            <div class="contact-form">
-                <!-- for assessment purposes, the "displayThankYou" function loads a thank you page behind the form dump loading
+            <!-- for assessment purposes, the "displayThankYou" function loads a thank you page behind the form dump loading
                      in a new window showing the data posted. The idea of creating my own php page with html embedded to keep the
                       styling was going to be the plan. However, it was not possible as setting up a php server within the codeanywhere
                        environment was not something I would have been comfortable with, nor would I possibly have had the time-->
-                <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank"
-                    onsubmit="displayThankYou()">
-                    <label for="contact-form-name" class="contact-form-outer-label"> Name </label>
-                    <input type="text" id="contact-form-name" name="name" class="contact-form-input"
-                        placeholder="Enter Your Name" required>
-                    <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
-                    <div class="contact-form-row">
-                        <select id="contact-form-country-codes" name="country-code" class="contact-form-country-codes"
-                            onchange="countryCodeSelected();"></select>
-                        <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
-                            placeholder="Enter Phone Number" required>
+            <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank" class="contact-form"
+                onsubmit="displayThankYou()">
+                <label for="contact-form-name" class="contact-form-outer-label"> Name </label>
+                <input type="text" id="contact-form-name" name="name" class="contact-form-input"
+                    placeholder="Enter Your Name" required>
+                <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
+                <div class="contact-form-row">
+                    <select id="contact-form-country-codes" name="country-code"
+                        class="contact-form-country-codes"></select>
+                    <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
+                        placeholder="Enter Phone Number" required>
+                </div>
+                <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
+                <input type="email" id="contact-form-email" class="contact-form-input" placeholder="Enter Email Address"
+                    required>
+                <label for="reason" class="contact-form-outer-label"> Reason For Contact </label>
+                <div class="contact-form-radio-row">
+                    <div class="radio-box">
+                        <label for="reason1" class="contact-form-radio-label"> General Enquiry </label>
+                        <input type="radio" id="reason1" name="reason" value="General" required>
                     </div>
-                    <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
-                    <input type="email" id="contact-form-email" class="contact-form-input"
-                        placeholder="Enter Email Address" required>
-                    <label for="reason" class="contact-form-outer-label"> Reason For Contact </label>
-                    <div class="contact-form-row radio-class">
-                        <div class="contact-form-radio-row">
-                            <label for="reason1" class="contact-form-first-radio-label"> General Enquiry </label>
-                            <input type="radio" id="reason1" name="reason" value="General" required>
-
-                            <label for="reason2" class="contact-form-radio-label"> Pricing/Quotation </label>
-                            <input type="radio" id="reason2" name="reason" value="Pricing">
-
-                            <label for="reason3" class="contact-form-radio-label"> Technical Support </label>
-                            <input type="radio" id="reason3" name="reason" value="Technical">
-                        </div>
+                    <div class="radio-box">
+                        <label for="reason2" class="contact-form-radio-label"> Pricing Enquiry </label>
+                        <input type="radio" id="reason2" name="reason" value="Pricing">
                     </div>
-                    <input type="submit" class="button contact-form-button">
-                </form>
+                    <div class="radio-box">
+                        <label for="reason3" class="contact-form-radio-label"> Support </label>
+                        <input type="radio" id="reason3" name="reason" value="Technical">
+                    </div>
+                </div>
+                <button class="button contact-form-button" type="submit"><span>Submit </span></button>
+            </form>
         </section>
         <section class="contact-details-container">
             <div class="contact-details-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78656.03446806408!2d-2.244156582553823!3d51.970405175395655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870e1bda52abb99%3A0xcd0491511441529!2sTewkesbury!5e0!3m2!1sen!2suk!4v1689385223534!5m2!1sen!2suk"
                     width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <!--<iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78656.03446806408!2d-2.244156582553823!3d51.970405175395655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870e1bda52abb99%3A0xcd0491511441529!2sTewkesbury!5e0!3m2!1sen!2suk!4v1689385223534!5m2!1sen!2suk"
-                    width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-            </div>
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
             <div class="contact-details-company">
                 <h2>Find Us</h2>
@@ -119,12 +115,12 @@
                 <p>Gloucestershire</p>
                 <h3 class="contact-details-email"><a href="mailto:info@codeinstitute.net"><i class="fa fa-envelope-o"
                             aria-hidden="true"></i>
-                        Email Us : info@codeinstitute.net</h3>
+                        Email Us : info@codeinstitute.net</a></h3>
                 <h3 class="contact-details-phone"><a href="tel:+442071833430"><i class="fa fa-phone"
                             aria-hidden="true"></i>
-                        Call Us : (+44)207 183 3430</a></p>
-                    <br>
-                    <p>NB.THESE CONTACTS ARE FOR CODE INSTITUTE</p>
+                        Call Us : (+44)207 183 3430</a></h3>
+                <br>
+                <p>NB.THESE CONTACTS ARE FOR CODE INSTITUTE</p>
             </div>
         </section>
 
@@ -204,18 +200,6 @@
             option += "</optgroup>";
             //append the whole string to the <select> element
             $(option).appendTo("#contact-form-country-codes");
-        }
-
-        function countryCodeSelected() {
-            //set the text to have the value of the dropdown value
-            countrycodePhoneText = "+(" + $("#contact-form-country-codes").val() + ") ";
-            console.log(countrycodePhoneText);
-            $("#contact-form-phone").prop("disabled", false);
-            $("#contact-form-phone").on('input', function () {
-                if (String($(this).val()).indexOf(countrycodePhoneText) == -1) {
-                    $(this).val(countrycodePhoneText);
-                }
-            });
         }
 
         function displayThankYou() {
