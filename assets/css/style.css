@@ -400,19 +400,19 @@ auto left/right margins to centre the content.*/
 CSS and tweaked existing CSS to suit my design. Setting flex-direction to column with a wrap present means each element in this container,
 will stack on top of each other instead of putting them into a row, creating the card effect as desired */
 .index-proposition-card {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 10px 5px #393D3F;
     background-color: #1D5D40;
-    width: 20%;
-    height: auto;
     align-content: center;
     justify-content: center;
     border-radius: 15px;
     margin: 2% 4%;
-    /*for any style changes, how quick to make them*/
     transition: 0.3s;
+    height: 500px;
+    position: relative;
+    contain: content;
 }
 
 /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
@@ -426,14 +426,18 @@ will stack on top of each other instead of putting them into a row, creating the
     padding: 1%;
     text-align: center;
     width: 100%;
+    position: absolute;
+    top: 2%;
 }
 
 /*Proposition card image style to full width of container (aiding the flex-direction:column stacking feature)*/
 .index-proposition-card-img {
-    width: 100%;
+    width: 300px;
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
+    position: inherit;
+    top: -10%;
 }
 
 /*Proposition card text gives a p tag slightly bigger  for emphasis, also centre aligned, full width to continue column stack*/
@@ -441,8 +445,10 @@ will stack on top of each other instead of putting them into a row, creating the
     text-align: center;
     justify-content: center;
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 130%;
+    position: absolute;
+    top: 69%;
 }
 
 /*Final section on index page, has a brief overview of some features and a button to go to product tab. Centrally aligned box, with centrally aligned content. */
@@ -783,14 +789,16 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
 @media screen and (max-width:1100px) {
     .index-proposition-card {
         width: 40%;
-    }
-
-    .index-features-section .button {
-        font-size: 90%;
-    }
-
-    .index-proposition-card {
+        height: 470px;
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 8px 3px #393D3F;
+    }
+
+    .index-proposition-card-img {
+        top: -9%;
+    }
+
+    .index-proposition-card-text {
+        top: 70%;
     }
 
     /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
@@ -798,6 +806,9 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 12px 7px #393D3F;
     }
 
+    .index-features-section .button {
+        font-size: 90%;
+    }
 
 
     .index-features-section h3,
@@ -1039,9 +1050,22 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
         border-bottom: none;
     }
 
+    /*.index-proposition-card {
+        
+    }*/
     .index-proposition-card {
+        height: 410px;
         width: 65%;
     }
+
+    .index-proposition-card-img {
+        top: -3%;
+    }
+
+    .index-proposition-card-text {
+        top: 80%;
+    }
+
 
 
     .index-features-section h3,
@@ -1051,6 +1075,18 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
 }
 
 @media screen and (max-width:600px) {
+
+    /*.index-proposition-card {
+        height: 410px;
+    }
+
+    .index-proposition-card-img {
+        top: -3%;
+    }
+
+    .index-proposition-card-text {
+        top: 80%;
+    }*/
 
     .index-features-section h3 {
         margin-top: 3%;
@@ -1065,6 +1101,20 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .about-box-content span,
     .thanks-box-content span {
         font-size: 120%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .index-proposition-card {
+        height: 500px;
+    }
+
+    .index-proposition-card-img {
+        top: -11%;
+    }
+
+    .index-proposition-card-text {
+        top: 72%;
     }
 }
 
@@ -1174,10 +1224,15 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
         font-size: 80%;
     }
 
+    .index-proposition-card-text {
+        top: 69%;
+    }
+
+    /*
     .index-proposition-card-text>p {
         font-size: 80%;
     }
-
+*/
     .index-proposition-card-text>h3 {
         font-size: 80%;
     }
