@@ -5,3 +5,5 @@ Opportunity
 Contrast calculator https://app.contrast-finder.org/ also achieveable when a page is "WAVEd"
 
 Alternating DIV sides (product.html)http://www.java2s.com/example/html-css/css-layout/alternating-left-and-right-positioning-with-css.html
+
+<a href="https://imageresizer.com/" target="_blank">Image Resizer</a>

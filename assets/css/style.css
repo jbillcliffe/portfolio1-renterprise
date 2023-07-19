@@ -680,19 +680,15 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
 }
 
 .product-feature-box:nth-child(even) {
-    align-items: end;
     float: right;
     clear: left;
     margin-right: 5%;
-    text-align: end;
 }
 
 .product-feature-box:nth-child(odd) {
-    align-items: start;
     float: left;
     clear: right;
     margin-left: 5%;
-
 }
 
 .product-feature-box:last-child {
