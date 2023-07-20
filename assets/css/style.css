@@ -753,7 +753,13 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
 .product-feature-box-image {
     width: 30%;
     height: auto;
-    padding-top: 1%;
+    padding-top: 1.5%;
+}
+
+.product-feature-box-image>img {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px -2px 4px 4px rgba(255, 255, 255, 0.6);
 }
 
 
