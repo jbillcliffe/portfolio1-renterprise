@@ -868,6 +868,25 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .radio-box {
         font-size: 75%;
     }
+
+    /*tried doing a singular selector, but need to use nth child to override the previous nth child use*/
+    .product-feature-box:nth-child(odd),
+    .product-feature-box:nth-child(even) {
+        width: 80%;
+        float: none;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-feature-box-image {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .product-feature-box-text {
+        font-size: 120%;
+    }
 }
 
 @media screen and (max-width:890px) {
@@ -1098,21 +1117,23 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .index-features-section ul {
         margin-left: 5%;
     }
+
+    .product-feature-box-header {
+        font-size: 60%;
+    }
+
+
+    .product-feature-box-text {
+        font-size: 100%;
+        width: 60%
+    }
+
+    .product-feature-box-image {
+        width: 40%
+    }
 }
 
 @media screen and (max-width:600px) {
-
-    /*.index-proposition-card {
-        height: 410px;
-    }
-
-    .index-proposition-card-img {
-        top: -3%;
-    }
-
-    .index-proposition-card-text {
-        top: 80%;
-    }*/
 
     .index-features-section h3 {
         margin-top: 3%;
@@ -1212,6 +1233,28 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     #contact-form-country-codes {
         font-size: 90%;
         width: 65px;
+    }
+
+    .product-feature-box-details:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .product-feature-box-details:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .product-feature-box-text {
+        font-size: 90%;
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .product-feature-box-image {
+        width: 50%;
+        margin: 2% auto 0 auto;
+        padding-bottom: 0;
+
     }
 }
 
@@ -1341,6 +1384,24 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .contact-details-company>p {
         font-size: 70%;
     }
+
+    .product-feature-box-header:nth-child(odd)>h2,
+    .product-feature-box-header:nth-child(even)>h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-feature-box-header:nth-child(odd)>i,
+    .product-feature-box-header:nth-child(even)>i {
+        width: 0%;
+        display: none;
+    }
+
+    .product-feature-box-image {
+        width: 70%;
+
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -1383,6 +1444,16 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .contact-details-company>p {
         font-size: 60%;
     }
+
+    .product-feature-box-header:nth-child(odd)>h2,
+    .product-feature-box-header:nth-child(even)>h2 {
+        font-size: 130%
+    }
+
+    .product-feature-box-text {
+        font-size: 80%;
+    }
+
 }
 
 @media screen and (max-width:300px) {
@@ -1404,5 +1475,14 @@ For how to make the iframe responsive, rather than cut the content at fixed pixe
     .about-box-content span,
     .thanks-box-content span {
         font-size: 80%;
+    }
+
+    .product-feature-box-header:nth-child(odd)>h2,
+    .product-feature-box-header:nth-child(even)>h2 {
+        font-size: 110%;
+    }
+
+    .product-feature-box-text {
+        font-size: 70%;
     }
 }
