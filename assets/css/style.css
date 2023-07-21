@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-/*Nice smooth entry animation for the webage, it also obscures the transitions on other elements jumping on page load.*/
+/*Smooth entry animation for the webage, it also obscures the transitions on
+ other elements jumping on page load.*/
 body {
     animation: fadeIn 1s;
     width: 100%;
@@ -16,6 +17,7 @@ body {
     background-color: #7785AC;
 }
 
+/*fadeIn starts invisible and finishes visible. Speed determined by later CSS*/
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -26,7 +28,8 @@ body {
     }
 }
 
-/* h1 capitalised for emphasis. Complimentary font to Hind Light in the logo, but  */
+/* h1 capitalised for emphasis. Complimentary font to Hind Light from the logo. 
+Text shadow increases its sharpness. 300% is the largest font size on the site */
 h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -35,13 +38,13 @@ h1 {
     font-size: 300%;
 }
 
+/*span within an h1 needs seperating styling wise to make smaller */
 .hero-text>h1>span {
     font-size: 70%;
-    text-shadow: 0px 1px 5px #000000;
 }
 
-/* h2 and h3 styling the same as above, defaults to the dark grey featured in the colour palette
- but can be changed as needs be. Fall-back font of sans-serif. Do not capitalise like h1 */
+/* h2 and h3 styling progressively smaller fonts. Fall-back font of sans-serif.
+ Do not capitalise like h1 */
 h2 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -58,7 +61,8 @@ h3 {
 }
 
 /*button hover animation tutorial from https: //www.w3schools.com/howto/howto_css_animate_buttons.asp*/
-/*Set a default format for all buttons has an inner glow and drop shadow (multiple box shadows) to make it pop out, encouraging a click.*/
+/*Set a default format for all buttons has an inner glow and drop shadow 
+(multiple box shadows) to make it pop out, encouraging a click.*/
 .button {
     height: auto;
     border-radius: 15px;
@@ -75,7 +79,8 @@ h3 {
     transition: all 0.5s;
 }
 
-/*span inside the button class to also include pointer cursor (stops a flicker between mouse and hand)*/
+/*span inside the button class to also include pointer cursor (stops a flicker
+ between mouse and hand)*/
 .button span {
     cursor: pointer;
     display: inline-block;
@@ -83,7 +88,8 @@ h3 {
     transition: 0.5s;
 }
 
-/*last part of span element within the button add the >> via unicode and set its position and transition speed to match previous.*/
+/*last part of span element within the button add the >> via unicode and set
+ its position and transition speed to match previous.*/
 .button span:after {
     content: '\00bb';
     position: absolute;
@@ -98,13 +104,14 @@ h3 {
     padding-right: 20px;
 }
 
+/*the content after the span (the >>) is made visible*/
 .button:hover span:after {
     opacity: 1;
     right: 0;
 }
 
-/* Default for p tag is the logo in the font, not used for headers as it is slim. H1 should be
-clear and emphasised for its importance */
+/* Default font for p & label is the logo in the font, not used for headers as
+ it is slim. */
 p,
 label {
     font-family: 'Hind', sans-serif;
@@ -112,6 +119,7 @@ label {
     text-shadow: 0px 1px 5px #000000;
 }
 
+/*Default font for inputs and selects*/
 input,
 select {
     font-family: 'Hind', sans-serif;
@@ -119,6 +127,8 @@ select {
     font-size: 100%;
 }
 
+/*this is setting the styling for the dropdown of a select menu, so the font is 
+smaller than the selected input*/
 select>optgroup,
 select>optgroup>option {
     font-family: 'Hind', sans-serif;
@@ -126,6 +136,7 @@ select>optgroup>option {
     font-size: 85%;
 }
 
+/*hr line breaks styling to make it white and thicker (white is a colour that is visible on the page) */
 hr {
     border: 0;
     clear: both;
@@ -135,8 +146,8 @@ hr {
     height: 2px;
 }
 
-/* header styling -
-Set colour theme in BG, full page width, set fixed height of 100px, reasonable height on
+/* Header Styling */
+/*Set colour theme in BG, full page width, set fixed height of 100px, reasonable height on
 all formats set to flex row and no left side margin*/
 header {
     background-color: #1D5D40;
@@ -149,8 +160,7 @@ header {
     box-shadow: 0px 0px 3px 3px rgba(57, 61, 63, 0.8);
 }
 
-/* The "a" tag which holds the logo - 15% of page width and minimum height to match header
-minimum width to match logo */
+/* The "a" tag which holds the logo - 100x100px square */
 header>a {
     height: 100px;
     width: 100px;
@@ -187,10 +197,13 @@ the page from the end of the row. Use align-items:center to align it vertically*
     align-items: center;
 }
 
+/*Hidden burger button, which is actually a hidden checkbox.*/
 .burger-btn {
     display: none;
 }
 
+/*This is a label which is what the user interacts with. Default invisible, 
+made visible at a particular screen width resolution in media queries*/
 .burger-icon {
     cursor: pointer;
     display: flex;
@@ -204,13 +217,13 @@ the page from the end of the row. Use align-items:center to align it vertically*
     font-size: 100%;
 }
 
+/*turn blue when hovering over the burger menu icon*/
 .burger-icon:hover {
     color: #C9F0FF;
 }
 
-/*Styling each link in the menu (each list item). List style type:none means that
-no bullet points are made. Set 30px in from the right. Display inline, (so that it creates them in from the right hand side, rather than
-creating thme into a column).*/
+/*Styling each link in the header menu (each list item). 
+ List style type:none means that no bullet points are made.*/
 .header-menu li {
     font-family: 'Hind', sans-serif;
     list-style-type: none;
@@ -218,28 +231,29 @@ creating thme into a column).*/
     display: inline;
 }
 
-/* each a (link) within the nav menu has no purple overlay when previously clicked (text-decoration)
-text is white */
+/* each <a> (link) within the nav menu has no purple overlay when previously
+ clicked (text-decoration) text is white */
 .header-menu a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-/* when a header-menu link is hovered, it goes a light blue to signify where the intended click
-in the menu is */
+/* when a header-menu link is hovered, it goes a light blue to signify where 
+ the intended click in the menu is */
 .header-menu a:hover {
     color: #C9F0FF;
 }
 
-/* on each page, there is a selected header-menu item. This item is underlined on its
-respective page */
+/* on each page, there is a selected header-menu item. This item is underlined
+ on its respective page */
 a.active {
     border-bottom: 1px solid #FFFFFF;
 }
 
 /* Footer styling */
 /*Full page width, fixed 100px height (height matches header). Flex row display
-with centred content and the background colour in line with the theme top shadow to help content pop*/
+with centred content and the background colour in line with the theme top shadow 
+to help content pop*/
 footer {
     width: 100%;
     height: 100px;
@@ -296,8 +310,6 @@ any overflow to stop it escape the container. BG white in colour.*/
     width: 100%;
     overflow: hidden;
     position: relative;
-    /* background-color: #7785AC; */
-    /* box-shadow: 0px 3px 1px 0px rgba(57, 61, 63, 0.8); */
 }
 
 /* The image is positioned at the start of the flex container (hero-container)
@@ -329,7 +341,6 @@ Insert "growth" image into the image container and give it square dimensions*/
 /*for the space below the hero which will hold sections. 100% width with 
 auto left/right margins to centre the content.*/
 .content-container {
-    /* background-color: #7785AC; */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +360,8 @@ auto left/right margins to centre the content.*/
     gap: 2%;
 }
 
-/*For the proposition cards in the index page to set the background colour and alignment*/
+/*For the proposition cards in the index page to set the background colour
+  and alignment*/
 .index-proposition-section {
     flex-wrap: wrap;
     width: 100%;
@@ -359,7 +371,8 @@ auto left/right margins to centre the content.*/
 
 }
 
-/*out-the-box section on the index page, set a shaddow at the base to create a pop out effect*/
+/*out-the-box section on the index page, set a shadow at the base to create 
+ a pop out effect*/
 .out-the-box {
     background-color: #1D5D40;
     display: flex;
@@ -370,6 +383,7 @@ auto left/right margins to centre the content.*/
     margin: 0 0 10px 0;
 }
 
+/*This area holds all the proposition cards on the index page*/
 .proposition-holder {
     display: flex;
     flex-direction: row;
@@ -383,7 +397,9 @@ auto left/right margins to centre the content.*/
     gap: 2%;
 }
 
-/*setting the p element(s) within the out-the-box class (in index) to be slightly larger than usual p elements, centrally aligned and a percentage width of its container*/
+/*setting the p element(s) within the out-the-box class (in index) to be 
+slightly larger than usual p elements, centrally aligned and a percentage 
+width of its container*/
 .out-the-box>p {
     margin-left: auto;
     margin-right: auto;
@@ -396,8 +412,9 @@ auto left/right margins to centre the content.*/
     width: 15%;
 }
 
-/* Card creation with hover tutorial gained from : https: //www.w3schools.com/howto/howto_css_cards.asp, added additional 
-CSS and tweaked existing CSS to suit my design. Setting flex-direction to column with a wrap present means each element in this container,
+/* Card creation with hover tutorial gained from : https: //www.w3schools.com/howto/howto_css_cards.asp,
+added additional CSS and tweaked existing CSS to suit my design. 
+Setting flex-direction to column with a wrap present means each element in this container,
 will stack on top of each other instead of putting them into a row, creating the card effect as desired */
 .index-proposition-card {
     display: inline-flex;
@@ -420,7 +437,8 @@ will stack on top of each other instead of putting them into a row, creating the
     box-shadow: 3px 3px 5px #FFFFFF inset, 5px 5px 15px 10px #393D3F;
 }
 
-/*Proposition card header style "shadow" creates a glow, sets to full width of container (aiding the flex-direction:column stacking feature)*/
+/*Proposition card header style "shadow" creates a glow, sets to full width
+ of container (aiding the flex-direction:column stacking feature)*/
 .index-proposition-card-head {
     margin: 1% 0;
     padding: 1%;
@@ -451,7 +469,9 @@ will stack on top of each other instead of putting them into a row, creating the
     top: 69%;
 }
 
-/*Final section on index page, has a brief overview of some features and a button to go to product tab. Centrally aligned box, with centrally aligned content. */
+/*Final section on index page, has a brief overview of some features and a 
+ button to go to product tab. Centrally aligned box, with centrally aligned 
+ content. */
 .index-features-section {
     width: 80%;
     display: flex;
@@ -473,16 +493,21 @@ will stack on top of each other instead of putting them into a row, creating the
     text-shadow: 0px 1px 5px #000000;
 }
 
+/*remove margins from h3 and ul elements in index-features-section at the bottom of the page*/
 .index-features-section h3,
 .index-features-section ul {
     margin-left: 0;
 }
 
+/*width of button within the index-features-section*/
 .index-features-section .button {
     width: 80%;
 }
 
-/*about.html*/
+/* ABOUT PAGE/THANKS PAGE - about.html/thanks.html.
+Content on the pages are similar. Reusing the css styling.*/
+
+/*the main box, set it green and 80% of the page*/
 .about-box,
 .thanks-box {
     width: 80%;
@@ -493,6 +518,7 @@ will stack on top of each other instead of putting them into a row, creating the
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
 }
 
+/*the header part of the main box on about and thanks*/
 .about-box-header,
 .thanks-box-header {
     display: flex;
@@ -502,6 +528,7 @@ will stack on top of each other instead of putting them into a row, creating the
     color: #C9F0FF;
 }
 
+/*styling image within the header (the logo) on about and thanks*/
 .about-box-header img,
 .thanks-box-header img {
     margin-left: 25px;
@@ -510,6 +537,7 @@ will stack on top of each other instead of putting them into a row, creating the
     height: 20%;
 }
 
+/*styling h1 within the header on about and thanks*/
 .about-box-header h1,
 .thanks-box-header h1 {
     margin-right: 25px;
@@ -519,6 +547,7 @@ will stack on top of each other instead of putting them into a row, creating the
     width: 80%;
 }
 
+/*position and size styling for the content on thanks and about*/
 .about-box-content,
 .thanks-box-content {
     width: 80%;
@@ -527,9 +556,9 @@ will stack on top of each other instead of putting them into a row, creating the
     justify-content: center;
     margin: 0 auto;
     padding: 4% 0;
-
 }
 
+/*styling any spans within the main content of thanks and about*/
 .about-box-content span,
 .thanks-box-content span {
     display: inline;
@@ -540,12 +569,14 @@ will stack on top of each other instead of putting them into a row, creating the
     text-shadow: 0px 1px 5px #000000;
 }
 
+/*styling any strong(bold) declarations within the main content of thanks and about*/
 .about-box-content strong,
 .thanks-box-content strong {
     display: inline;
 }
 
-/*contact.html*/
+/* CONTACT/ENQUIRY PAGE - contact.html.*/
+/*styling the main green boxes for the contact page, which has two green boxes*/
 .contact-form-container,
 .contact-details-container {
     width: 80%;
@@ -555,11 +586,13 @@ will stack on top of each other instead of putting them into a row, creating the
     box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px #393D3F;
 }
 
+/*the form container will be stacked like a column, unlike the details*/
 .contact-form-container {
     display: flex;
     flex-direction: column;
 }
 
+/*styling for the form itself. Centring it and less of a width than the header*/
 .contact-form {
     display: flex;
     width: 60%;
@@ -569,6 +602,7 @@ will stack on top of each other instead of putting them into a row, creating the
     flex-direction: column;
 }
 
+/*the header formatting for the form on the contact page*/
 .contact-form-header {
     width: 100%;
     text-align: center;
@@ -576,6 +610,7 @@ will stack on top of each other instead of putting them into a row, creating the
     margin-top: 10px;
 }
 
+/*a full row class which puts the elements in a row */
 .contact-form-row {
     display: flex;
     flex-direction: row;
@@ -583,6 +618,8 @@ will stack on top of each other instead of putting them into a row, creating the
     width: 100%;
 }
 
+/*a box to hold the radio buttons in the form. Setting the flex direction to 
+row to start witth*/
 .radio-box {
     display: flex;
     flex-direction: row;
