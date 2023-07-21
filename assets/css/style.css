@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     border: none;
-    /* To prevent overlapping border issues!! */
     font-family: 'Hind', sans-serif;
+    /* To prevent overlapping border issues!! */
     box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ h3 {
     font-size: 120%;
 }
 
-/*button hover animation tutorial from https: //www.w3schools.com/howto/howto_css_animate_buttons.asp*/
+/*button hover animation tutorial from https://www.w3schools.com/howto/howto_css_animate_buttons.asp*/
 /*Set a default format for all buttons has an inner glow and drop shadow 
 (multiple box shadows) to make it pop out, encouraging a click.*/
 .button {
@@ -146,7 +146,7 @@ hr {
     height: 2px;
 }
 
-/* Header Styling */
+/* HEADER STYLING */
 /*Set colour theme in BG, full page width, set fixed height of 100px, reasonable height on
 all formats set to flex row and no left side margin*/
 header {
@@ -412,7 +412,7 @@ width of its container*/
     width: 15%;
 }
 
-/* Card creation with hover tutorial gained from : https: //www.w3schools.com/howto/howto_css_cards.asp,
+/* Card creation with hover tutorial gained from : https://www.w3schools.com/howto/howto_css_cards.asp,
 added additional CSS and tweaked existing CSS to suit my design. 
 Setting flex-direction to column with a wrap present means each element in this container,
 will stack on top of each other instead of putting them into a row, creating the card effect as desired */
@@ -504,8 +504,9 @@ will stack on top of each other instead of putting them into a row, creating the
     width: 80%;
 }
 
-/* ABOUT PAGE/THANKS PAGE - about.html/thanks.html.
-Content on the pages are similar. Reusing the css styling.*/
+/* ABOUT PAGE/THANKS PAGE */
+/*Content on the pages are similar. Reusing the css styling. Different class names
+for clear separation between pages*/
 
 /*the main box, set it green and 80% of the page*/
 .about-box,
@@ -626,11 +627,13 @@ row to start witth*/
     padding-right: 2%;
 }
 
+/*holds the 3 radio boxes in a row to put them alongside each other in the form */
 .contact-form-radio-row {
     display: flex;
     flex-direction: row;
 }
 
+/*all labels within the contact form styling */
 .contact-form-container label {
     font-size: 120%;
     display: flex;
@@ -638,11 +641,14 @@ row to start witth*/
     text-align: end;
 }
 
+/* applies to name and email as phone needs special styling */
 .contact-form-input {
     width: 100%;
     margin-bottom: 10px;
 }
 
+/*referring by id for selector specificity importance as jquery is used 
+ this is the dropdown for the dialing codes*/
 #contact-form-country-codes {
     width: 70px;
     display: flex;
@@ -650,55 +656,58 @@ row to start witth*/
     margin-bottom: 0;
 }
 
+/*styling for the phone number input */
 .contact-form-phone {
     width: 100%;
     margin-bottom: 0;
 }
 
+/*styling for the dropdown styling which appears in the dropdown of the dialing 
+ codes select */
 #contact-form-country-codes>optgroup,
 #contact-form-country-codes>optgroup>option {
     width: 200px;
     display: flex;
 }
 
+/* styling for the contact form radio button labels */
 .contact-form-radio-label {
-
     margin-right: 5px;
 }
 
+/*styling for the submit button within the contact form */
 .contact-form-button {
     display: flex;
     width: 60%;
     justify-content: center;
-
 }
 
-/*https: //www.w3schools.com/howto/howto_css_responsive_iframes.asp
-For how to make the iframe responsive, rather than cut the content at fixed pixels*/
+/*Inspiration for method from : 
+ https: //www.w3schools.com/howto/howto_css_responsive_iframes.asp
+ For how to make the iframe responsive, rather than cut the content at fixed
+ pixels so it will always show the relevant part of the map */
 
+/* styling for the general container within the green contact details box */
 .contact-details-container {
     display: flex;
     flex-direction: row;
     height: auto;
 }
 
+/*styling the map div, which will hold the iframe within */
 .contact-details-map {
     width: 60%;
-    /*contain: content;*/
     margin: 25px 0 25px 25px;
-    /*width: 100%;*/
     height: 400px;
 }
 
+/*setting initial size for the iframe*/
 .contact-details-map>iframe {
-    /*margin: 0 3%;*/
-
     width: 100%;
     height: 400px;
-    /*height: 100%;*/
-
 }
 
+/*styling for div containing company contact details */
 .contact-details-company {
     width: 40%;
     margin: 25px 25px;
