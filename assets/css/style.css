@@ -185,7 +185,6 @@ the page from the end of the row. Use align-items:center to align it vertically*
 .header-menu {
     clear: both;
     width: 85%;
-    height: 100px;
     font-size: 150%;
     height: inherit;
     background-color: #1D5D40;
@@ -354,7 +353,6 @@ auto left/right margins to centre the content.*/
     padding: 0.5%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     align-content: center;
     justify-content: center;
     gap: 2%;
@@ -483,10 +481,7 @@ will stack on top of each other instead of putting them into a row, creating the
     align-content: center;
     justify-content: center;
     border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    margin-bottom: 3%;
+    margin: 1% auto 3% auto;
     padding: 2%;
     font-size: 130%;
     color: #FFFFFF;
@@ -562,7 +557,6 @@ for clear separation between pages*/
 /*styling any spans within the main content of thanks and about*/
 .about-box-content span,
 .thanks-box-content span {
-    display: inline;
     width: 100%;
     color: #FFFFFF;
     font-family: 'Hind', sans-serif;
@@ -1416,12 +1410,13 @@ row to start witth*/
 /*For screens of resolution no greater in width than 440px*/
 @media screen and (max-width:440px) {
 
-    /*change hero to stack, so image will be on top of text*/
+    /* index.html - change hero to column, so image will be on top of text*/
     .hero-container {
         flex-direction: column;
         height: auto;
     }
 
+    /* index.html -alter hero-image styling */
     .hero-image {
         margin: 15px;
         width: 150px;
@@ -1431,6 +1426,7 @@ row to start witth*/
         box-shadow: 2px 2px 5px #C9F0FF inset, 2px 2px 5px 2px #393D3F;
     }
 
+    /* index.html -alter hero-text class styling */
     .hero-text {
         text-align: center;
         margin: 0;
@@ -1438,18 +1434,22 @@ row to start witth*/
         margin-right: auto;
     }
 
+    /* index.html -alter hero-text styling for nested h1 tags */
     .hero-text h1 {
         margin: 15px;
         content: 'RENTERPRISE\AInnovative Software To Drive Your Rental Business';
         white-space: pre-wrap;
     }
 
+    /* index.html - change size of proposition cards*/
     .index-proposition-card {
         max-width: 300px;
         width: 80%;
         height: auto;
     }
 
+    /*index.html - header styling within the cards, remove absolute position to
+     make it responsive when it is one card wide on the page */
     .index-proposition-card-head {
         font-size: 80%;
         width: 100%;
@@ -1457,6 +1457,8 @@ row to start witth*/
         padding: 3%;
     }
 
+    /*index.html - image styling within the cards,
+    remove absolute position to make it responsive when it is one card wide on the page */
     .index-proposition-card-img {
         width: 95%;
         margin-left: auto;
@@ -1465,6 +1467,9 @@ row to start witth*/
         position: unset;
     }
 
+    /*index.html - text styling within the cards,
+    remove absolute position to make it responsive when it is one card wide on
+    the page */
     .index-proposition-card-text {
         width: 100%;
         margin-left: auto;
@@ -1472,23 +1477,28 @@ row to start witth*/
         position: unset;
     }
 
+    /* index.html - change h3 font size when nested into cards on index */
     .index-proposition-card-text>h3 {
         font-size: 80%;
     }
 
+    /* index.html - change h3 margin when nested into features section on index */
     .index-features-section h3 {
         margin-right: 8%;
     }
 
+    /* index.html - a shared margin for h3 and ul in features section on index */
     .index-features-section h3,
     .index-features-section ul {
         margin-left: 8%;
     }
 
+    /*centre all footer content */
     footer {
         justify-content: center;
     }
 
+    /* change font size and line height of fontawesome icons in footer */
     .social-networks i {
         font-size: 100%;
         height: auto;
@@ -1496,50 +1506,62 @@ row to start witth*/
         line-height: 40px;
     }
 
+    /* about.html/thanks.html - font size of h1 tags within the header */
     .about-box-header h1,
     .thanks-box-header h1 {
         font-size: 120%;
     }
 
+    /* about.html/thanks.html - font size of span tags within the main content */
     .about-box-content span,
     .thanks-box-content span {
         font-size: 90%;
     }
 
+    /* contact.html - font size of header text in the form */
     .contact-form-header {
         font-size: 70%;
     }
 
+    /* contact.html - change the form rows to be a column instead of row */
     .contact-form-row {
         flex-direction: column;
     }
 
+    /* contact.html - styling of phone input in the form */
     .contact-form-phone {
         margin-top: 1%;
         width: 100%;
     }
 
+    /* contact.html - change font size of other input fields (not phone/radio)*/
     .contact-form-input,
     .radio-box {
         font-size: 80%;
     }
 
+    /* contact.html - change font size of phone number input */
     #contact-form-phone {
         font-size: 80%;
     }
 
+    /* contact.html - change font size of h2 tags in the company details box */
     .contact-details-company>h2 {
         font-size: 220%;
     }
 
+    /* contact.html - change font size of h3 tags in the company details box */
     .contact-details-company>h3 {
         font-size: 80%;
     }
 
+    /* contact.html - change font size of p tags in the company details box */
     .contact-details-company>p {
         font-size: 70%;
     }
 
+    /*product.html - when this size, centre the h2 in the header, rather than 
+      justify to a side */
     .product-feature-box-header:nth-child(odd)>h2,
     .product-feature-box-header:nth-child(even)>h2 {
         width: 100%;
@@ -1547,96 +1569,124 @@ row to start witth*/
         justify-content: center;
     }
 
+    /*product.html - when this size, remove the fontawesome, by making it
+      not visible */
     .product-feature-box-header:nth-child(odd)>i,
     .product-feature-box-header:nth-child(even)>i {
         width: 0%;
         display: none;
     }
 
+    /* product.html - change box size for the product feature image */
     .product-feature-box-image {
         width: 70%;
 
     }
 }
 
+/*For screens of resolution no greater in width than 350px*/
 @media screen and (max-width:350px) {
 
+    /* index.html - change font size of headers in cards */
     .index-proposition-card-head {
         font-size: 60%;
     }
 
+    /* index.html - change font size of p tags in cards */
     .index-proposition-card-text>p {
         font-size: 70%;
     }
 
+    /* index.html - change font size of h3 tags in cards */
     .index-proposition-card-text>h3 {
         font-size: 70%;
     }
 
+    /* index.html - common styling across h3 and ul tags in features section for
+       margin and font size */
     .index-features-section h3,
     .index-features-section ul {
         margin-left: 10%;
         font-size: 90%;
     }
 
+    /*about.html - hide the logo in the header as it takes a lot of space at
+     this size*/
     .content-container .about-box .about-box-header img {
         display: none;
         width: 0;
     }
 
+    /* contact.html - change size of font in radio boxes */
     .radio-box {
         font-size: 80%
     }
 
+    /* contact.html - change size of font in labels */
     label.contact-form-outer-label {
         font-size: 90%;
     }
 
+    /* contact.html - change size of h3 tags in company details */
     .contact-details-company>h3 {
         font-size: 70%;
     }
 
+    /* contact.html - change size of p tags in company details */
     .contact-details-company>p {
         font-size: 60%;
     }
 
+    /* product.html - change font size of h2 tags in the headers of the feature
+       boxes */
     .product-feature-box-header:nth-child(odd)>h2,
     .product-feature-box-header:nth-child(even)>h2 {
         font-size: 130%
     }
 
+    /* product.html - change font size of text in the feature boxes */
     .product-feature-box-text {
         font-size: 80%;
     }
 
 }
 
+/*For screens of resolution no greater in width than 300*/
 @media screen and (max-width:300px) {
 
+    /* index.html - font size and shadow size of span element deeply nested
+       in hero text */
     .hero-text>h1>span {
         font-size: 60%;
         text-shadow: 0px 1px 5px #000000;
     }
 
+    /*index.html - font size of button in features section */
     .index-features-section .button {
         font-size: 65%;
     }
 
+    /*about.html/thanks.html - font size of h1 tags in the headers in the
+      thanks and about page. */
     .about-box-header h1,
     .thanks-box-header h1 {
         font-size: 110%;
     }
 
+    /*about.html/thanks.html - font size of span in the main content. */
     .about-box-content span,
     .thanks-box-content span {
         font-size: 80%;
     }
 
+    /*about.html/thanks.html - font size of h2 tags in the header
+        of the product feature box */
     .product-feature-box-header:nth-child(odd)>h2,
     .product-feature-box-header:nth-child(even)>h2 {
         font-size: 110%;
     }
 
+    /* product.html - change font size of the main text in the feature box */
     .product-feature-box-text {
         font-size: 70%;
     }
