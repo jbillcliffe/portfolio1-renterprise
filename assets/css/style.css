@@ -714,11 +714,14 @@ row to start witth*/
     text-align: end;
 }
 
+/* a tags to be white in the contact details for email and phone hrefs */
 .contact-details-email>a,
 .contact-details-phone>a {
     color: #FFFFFF;
 }
 
+/* PRODUCT PAGE - product.html.*/
+/*setting initial styling for the green product box*/
 .product-feature-box {
     width: 70%;
     background-color: #1D5D40;
@@ -731,38 +734,45 @@ row to start witth*/
     padding: 2%;
 }
 
+/*every even product feature box to be aligned to the right */
 .product-feature-box:nth-child(even) {
     float: right;
     clear: left;
     margin-right: 5%;
 }
 
+/*every odd product feature box to be aligned to the left */
 .product-feature-box:nth-child(odd) {
     float: left;
     clear: right;
     margin-left: 5%;
 }
 
+/*the last product feature box to be given an extra bit of spacing at the base */
 .product-feature-box:last-child {
     margin-bottom: 5%;
 }
 
+/*the first product feature box to be given an extra bit of spacing at the top */
 .product-feature-box:first-child {
     margin-top: 3%;
 }
 
+/* header within each product feature box styling */
 .product-feature-box-header {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
+/* product feature box header font styling */
 .product-feature-box-header>h2 {
     font-size: 160%;
     width: 85%;
     padding: 3px;
 }
 
+/* product feature box header fontawesome styling */
 .product-feature-box-header>i {
     font-size: 170%;
     width: 15%;
@@ -770,16 +780,21 @@ row to start witth*/
     color: #FFFFFF;
 }
 
+/*for every odd product feature box - set header text to the left,
+  for every even product feature box - set overall text to the left */
 .product-feature-box:nth-child(odd)>.product-feature-box-header>h2,
 .product-feature-box:nth-child(even)>.product-feature-box-header>i {
     text-align: left;
 }
 
+/*for every even product feature box - set header text to the right,
+  for every odd product feature box - set overall text to the right */
 .product-feature-box:nth-child(even)>.product-feature-box-header>h2,
 .product-feature-box:nth-child(odd)>.product-feature-box-header>i {
     text-align: right;
 }
 
+/* styling for overall content (text and image) in product feature box */
 .product-feature-box-details {
     display: flex;
     flex-direction: row;
@@ -788,6 +803,7 @@ row to start witth*/
 
 }
 
+/* styling for content text in each product feature box */
 .product-feature-box-text {
     display: flex;
     flex-direction: column;
@@ -796,32 +812,37 @@ row to start witth*/
     padding: 1% 3% 0 0;
 }
 
+/* styling for content image box in each product feature box */
 .product-feature-box-image {
     width: 30%;
     height: auto;
     padding-top: 1.5%;
 }
 
+/* styling for content image in each product feature box */
 .product-feature-box-image>img {
     background-color: #FFFFFF;
     border-radius: 25px;
     box-shadow: 0px -2px 4px 4px rgba(255, 255, 255, 0.6);
 }
 
-
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 /*Added additional media queries to make the precision greater*/
+
+/*For screens of resolution no greater in width than 1490px*/
 /*For index-proposition-cards to try to keep the headers in one line */
 @media screen and (max-width:1490px) {
 
-    /*Increase button width for readability.*/
+    /*index.html - Increase button width for readability. in out-the-box*/
     .out-the-box .button {
         width: 20%;
     }
 }
 
-/*For index-proposition-cards to try to keep the headers in one line */
+/*For screens of resolution no greater in width than 1374px*/
+/*index.html -For index-proposition-cards to try to keep the headers in one line */
 @media screen and (max-width:1374px) {
+
     .index-proposition-card {
         width: 25%;
         margin: 2% 0%;
@@ -831,91 +852,107 @@ row to start witth*/
 /*For screens of resolution no greater in width than 1200px*/
 @media screen and (max-width:1200px) {
 
-    /*Decrease font sizes*/
+    /*Decrease h1 font size*/
     h1 {
         font-size: 300%;
     }
 
+    /*Decrease nested span in h1 font size*/
     h1 span {
         font-size: 70%;
     }
 
-    /*decrease font size and increase width so it fits on less lines to not dominate too much height space*/
+    /*index.html - decrease font size and increase width so it fits on less lines to not dominate too much height space*/
     .out-the-box>p {
         font-size: 120%;
         max-width: 90%;
     }
 
-    /*Increase button width for readability.*/
+    /*index.html - Increase button width for readability.*/
     .out-the-box .button {
         width: 20%;
     }
-
-    /*Increase button width to put text on one line.*/
-    /*.index-features-section .button {
-        width: 35%;
-    }*/
 }
 
-/*If the index-proposition-cards get too small, they get out of line*/
+/*For screens of resolution no greater in width than 1100px*/
 @media screen and (max-width:1100px) {
+
+    /*index.html - change card width to be bigger, new height and shrink shadow
+      to make it not become too big for the card */
     .index-proposition-card {
         width: 40%;
         height: 470px;
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 8px 3px #393D3F;
     }
 
+    /*index.html - change positioning for the image container */
     .index-proposition-card-img {
         top: -9%;
     }
 
+    /*index.html - change positioning for the text container */
     .index-proposition-card-text {
         top: 70%;
     }
 
-    /*A larger shadow is shown on hover, which transitions back when the cursor leaves the card*/
+    /*index.html -A larger shadow is shown on hover, this is made smaller due
+      to smaller card */
     .index-proposition-card:hover {
         box-shadow: 3px 3px 5px #C9F0FF inset, 3px 3px 12px 7px #393D3F;
     }
 
+    /*index.html -change button font size in the features section at the
+      bottom of the page */
     .index-features-section .button {
         font-size: 90%;
     }
 
 
+    /*index.html - change margin to be more indented on h3 and ul in index
+      features section at the bottom of the page */
     .index-features-section h3,
     .index-features-section ul {
         margin-left: 20px;
     }
 
+    /*contact.html - change font size of a radio box in the form */
     .radio-box {
         font-size: 90%;
     }
 }
 
-
+/*For screens of resolution no greater in width than 1024px*/
 @media screen and (max-width:1024px) {
+
+    /*set the font size of elements matching the class button*/
     .button {
         font-size: 140%;
     }
 
+    /*contact.html - change font size of a radio box in the form */
     .radio-box {
         font-size: 88%;
     }
 }
 
+/*For screens of resolution no greater in width than 950px*/
 @media screen and (max-width:950px) {
 
-    /*Increase button width for readability.*/
+    /*index.html - Increase button width for readability.*/
     .out-the-box .button {
         width: 40%;
     }
 
+    /*contact.html - change font size of a radio box in the form */
     .radio-box {
         font-size: 75%;
     }
 
-    /*tried doing a singular selector, but need to use nth child to override the previous nth child use*/
+    /*tried doing a singular selector, but need to use nth child to override the
+      previous nth child use this would be due to levels of specificity*/
+
+    /*product.html - for all product feature boxes, remove floats and centre
+      align them. (Remove stagger) */
     .product-feature-box:nth-child(odd),
     .product-feature-box:nth-child(even) {
         width: 80%;
@@ -925,23 +962,30 @@ row to start witth*/
         margin-right: auto;
     }
 
+    /*product.html - centre all the product feature images, instead of having them
+      placed in empty space in the parent div */
     .product-feature-box-image {
         margin-top: auto;
         margin-bottom: auto;
     }
 
+    /*product.html - change font size of the text in each product feature box*/
     .product-feature-box-text {
         font-size: 120%;
     }
 }
 
+/*For screens of resolution no greater in width than 890px*/
 @media screen and (max-width:890px) {
 
+    /*about.html/thanks.html - change from flex row to flex column in header,
+      meaning the logo moves from the left to a larger centre image */
     .about-box-header,
     .thanks-box-header {
         flex-direction: column;
     }
 
+    /*about.html/thanks.html - centre align logo and change size to be larger */
     .about-box-header img,
     .thanks-box-header img {
         width: 50%;
@@ -950,6 +994,7 @@ row to start witth*/
         margin-right: auto;
     }
 
+    /*about.html/thanks.html - centre align header text */
     .about-box-header h1,
     .thanks-box-header h1 {
         width: 100%;
@@ -959,52 +1004,62 @@ row to start witth*/
     }
 }
 
+/*For screens of resolution no greater in width than 850px*/
 @media screen and (max-width:850px) {
 
-    /*Decrease font sizes*/
+    /*Decrease h1 font size*/
     h1 {
         font-size: 250%;
     }
 
+    /*Decrease nested span in h1 font size*/
     h1 span {
         font-size: 50%;
     }
 
+    /* change font size of ul elements in header */
     .header-menu>ul {
         font-size: 80%;
     }
 
+    /* index.html - change font size within the class */
     .full-width-row {
         font-size: 110%;
     }
 
+    /* index.html - change font size of the p tags within the out-the-box class */
     .out-the-box>p {
         font-size: 100%;
     }
 
+    /* index.html - change font size of text, and width of button class elements
+       when nested into the out-the-box class */
     .out-the-box .button {
         width: 30%;
         font-size: 90%
     }
 
+    /* index.html - change p tag font size when inside index-proposition class div*/
     .index-proposition-card-text>p {
         font-size: 90%;
     }
 
+    /* index.html - change h3 tag font size when inside index-proposition class div*/
     .index-proposition-card-text>h3 {
         font-size: 90%;
     }
 
+    /* index.html -change font size of text within the index-features-section class */
     .index-features-section {
         font-size: 90%;
     }
 
+    /* contact.html - change flex from row to column in contact details container */
     .contact-details-container {
-        /*display: flex;*/
         flex-direction: column;
-
     }
 
+    /* contact.html - change map from being on the left to being in the centre*/
     .contact-details-map {
         width: 90%;
         margin-left: auto;
@@ -1013,10 +1068,14 @@ row to start witth*/
 
     }
 
+    /* contact.html - change iframe to have relative positioning, so it becomes
+       responsive, showing the same map origin */
     .contact-details-map>iframe {
         position: relative;
     }
 
+    /* contact.html - centre align contact details for the company, under the 
+       map */
     .contact-details-company {
         width: 90%;
         margin-left: auto;
@@ -1024,6 +1083,8 @@ row to start witth*/
         justify-content: center;
     }
 
+    /*contact.html - centre align all content within the 
+      contact-details-company div */
     .contact-details-company>* {
         display: flex;
         margin-left: auto;
@@ -1032,23 +1093,28 @@ row to start witth*/
         text-align: center;
     }
 
+    /*contact.html - on the form change the radio buttons to go from a row to
+      a column */
     .contact-form-radio-row {
         flex-direction: column;
     }
 
+    /* contact.html - change font size of content of radio-box */
     .radio-box {
         font-size: 95%;
     }
 }
 
+/*For screens of resolution no greater in width than 770px*/
 @media screen and (max-width:770px) {
+
+    /*index.html - centre align content of the hero container */
     .hero-container {
         align-items: center;
         height: 300px;
     }
 
-    /* The image is positioned at the start of the flex container (hero-container)
-    Insert "growth" image into the image container and give it square dimensions*/
+    /* index.html - change image size to adapt to smaller resolution */
     .hero-image {
         margin: 25px 25px 0px 15px;
         width: 200px;
@@ -1058,7 +1124,7 @@ row to start witth*/
         box-shadow: 5px 5px 10px #C9F0FF inset, 5px 5px 10px 5px #393D3F;
     }
 
-    /* The image is on flex-start so the text goes on flex-end*/
+    /* index.html - change hero text to adapt to smaller resolution */
     .hero-text {
         height: 200px;
         margin: 25px 25px 0px 0px;
@@ -1066,22 +1132,24 @@ row to start witth*/
     }
 }
 
-
+/*For screens of resolution no greater in width than 705px*/
 @media screen and (max-width:705px) {
+
+    /*change height of header*/
     header {
 
         width: 100%;
         height: 75px;
     }
 
+    /* change a tag styling in header */
     header a {
         height: 75px;
         width: auto;
     }
 
-    /* Logo style - Get width from parent ("a" tag) 0 margin within its container (header) 
-    setting again the min height/width to match the parent and to not let the image go any
-    smaller, to the point it cannot be seen. Which it will without this setting */
+    /* change size of logo to adapt for smaller height header on smaller 
+       resolutions */
     .header-logo {
 
         height: 75px;
@@ -1090,16 +1158,19 @@ row to start witth*/
         min-width: 1px;
     }
 
+    /*make the burger icon (label that is clickable) visible */
     .burger-icon {
         visibility: visible;
     }
 
+    /*change the menu in the header styling */
     .header-menu {
         clear: none;
         display: flex;
         max-height: none;
     }
 
+    /* move the position of the menu to be below the header, full screen width */
     .header-menu>ul {
         position: absolute;
         visibility: hidden;
@@ -1114,11 +1185,14 @@ row to start witth*/
         box-shadow: 0px 4px 9px 3px #393D3F;
     }
 
+    /*set a "function" so when the ul is checked/unchecked (burger label clicked)
+      the ul (menu) fades in/fades out */
     .burger-btn:checked~ul {
         visibility: visible;
         animation: fadeIn 0.5s;
     }
 
+    /* set the styling of each list item in the menu that appears across the width of the screen */
     .burger-btn:checked~ul li {
         position: relative;
         background: #1D5D40;
@@ -1132,92 +1206,109 @@ row to start witth*/
         padding: 1%;
     }
 
+    /*styling the fontawesome icon in the burger menu */
     .burger-btn:checked~ul li a {
         padding: 1%;
         height: auto;
     }
 
+    /*styling the "active" class which is a highlighting of the page currently
+    in. */
     .active {
         border-bottom: none;
     }
 
-    /*.index-proposition-card {
-        
-    }*/
+    /*index.html - changing height and width of proposition cards */
     .index-proposition-card {
         height: 410px;
         width: 65%;
     }
 
+    /* index.html - change position of image within proposition card */
     .index-proposition-card-img {
         top: -3%;
     }
 
+    /* index.html - change position of text within proposition card */
     .index-proposition-card-text {
         top: 80%;
     }
 
-
-
+    /* index.html - change h3 and ul margins in index-features-section at the
+       bottom of the page */
     .index-features-section h3,
     .index-features-section ul {
         margin-left: 5%;
     }
 
+    /* product.html - change font size for header in each product feature box */
     .product-feature-box-header {
         font-size: 60%;
     }
 
-
+    /* product.html - change text size for header in each product feature box
+       and class width (to make image bigger) */
     .product-feature-box-text {
         font-size: 100%;
         width: 60%
     }
 
+    /* product.html - image made larger to fill larger space left behind */
     .product-feature-box-image {
         width: 40%
     }
 }
 
+/*For screens of resolution no greater in width than 600px*/
 @media screen and (max-width:600px) {
 
+    /*index.html - change h3 margin in features section at bottom */
     .index-features-section h3 {
         margin-top: 3%;
     }
 
+    /* about.html/thanks.html - set h1 tag smaller font and centered */
     .about-box-header h1,
     .thanks-box-header h1 {
         justify-content: center;
         font-size: 200%;
     }
 
+    /* about.html/thanks.html - set span tag smaller font */
     .about-box-content span,
     .thanks-box-content span {
         font-size: 120%;
     }
 }
 
+/*For screens of resolution no greater in width than 570px*/
 @media screen and (max-width:570px) {
+
+    /* index.html - change height of proposition card */
     .index-proposition-card {
         height: 500px;
     }
 
+    /* index.html - change position of image in proposition card */
     .index-proposition-card-img {
         top: -11%;
     }
 
+    /* index.html - change position of text in proposition card */
     .index-proposition-card-text {
         top: 72%;
     }
 }
 
+/*For screens of resolution no greater in width than 530px*/
 @media screen and (max-width:530px) {
 
-    /*Adjust hero + font sizes in buttons + out of box font size*/
+    /*index.html - Adjust hero height*/
     .hero-container {
         height: 250px;
     }
 
+    /* index.html - change size of image and shadow of image in hero */
     .hero-image {
         width: 175px;
         height: 175px;
@@ -1226,69 +1317,86 @@ row to start witth*/
         box-shadow: 4px 4px 8px #C9F0FF inset, 4px 4px 8px 4px #393D3F;
     }
 
+    /* index.html - change height of text and font size of text in hero */
     .hero-text {
         height: 175px;
         font-size: 70%;
     }
 
+    /*index.html - change size of p tag text in out-the-box class */
     .out-the-box>p {
         font-size: 80%;
     }
 
+    /* index.html - change button class width in out-the-box class */
     .out-the-box .button {
         width: 50%;
     }
 
+    /* index.html - change button class width in index-features-section  class */
     .index-features-section .button {
         font-size: 80%;
     }
 
+    /*change burger menu to be a column instead of row */
     .burger-btn:checked~ul {
         flex-direction: column;
         align-content: center;
         justify-content: center;
     }
 
+    /* set the width of each item in the menu to be full page */
     .burger-btn:checked~ul li {
         width: 100%;
     }
 
+    /* about.html/thanks.html - change font size of h1 tags in the headers */
     .about-box-header h1,
     .thanks-box-header h1 {
         font-size: 175%;
     }
 
+    /* about.html/thanks.html - change font size of span within content boxes */
     .about-box-content span,
     .thanks-box-content span {
         font-size: 100%;
     }
 
+    /*contact.html - change width of contact form */
     .contact-form {
         width: 80%;
     }
 
+    /* contact.html - change font sizes in inputs and radios */
     .contact-form-input,
     .radio-box {
         font-size: 90%;
     }
 
+    /* contact.html - set font size of phone number input */
     #contact-form-phone {
         font-size: 90%;
     }
 
+    /* contact.html - set font size and width of country code input */
     #contact-form-country-codes {
         font-size: 90%;
         width: 65px;
     }
 
+    /* product.html - product-feature class at this point needs to have fontawesome,
+    all aligned to the same side (left) */
     .product-feature-box-details:nth-child(odd) {
         flex-direction: column-reverse;
     }
 
+    /*product.html - same as above, but moving from the right */
     .product-feature-box-details:nth-child(even) {
         flex-direction: column;
     }
 
+    /* product.html - styling the text in the feature box, smaller text, full
+       width, centred text */
     .product-feature-box-text {
         font-size: 90%;
         width: 100%;
@@ -1296,18 +1404,19 @@ row to start witth*/
         text-align: center;
     }
 
+    /* product.html - product feature image to increase in size to fit into 
+       larger space left behind */
     .product-feature-box-image {
         width: 50%;
         margin: 2% auto 0 auto;
         padding-bottom: 0;
-
     }
 }
 
-
+/*For screens of resolution no greater in width than 440px*/
 @media screen and (max-width:440px) {
 
-    /*change hero to stack, so image will be on top of text, then resize hero content*/
+    /*change hero to stack, so image will be on top of text*/
     .hero-container {
         flex-direction: column;
         height: auto;
