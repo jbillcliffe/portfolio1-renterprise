@@ -59,7 +59,9 @@
         </nav>
     </header>
     <main>
+        <!--section for the contact form -->
         <section class="contact-form-container">
+            <!-- contact form box header-->
             <div class="contact-form-header">
                 <h2>Contact Us</h2>
             </div>
@@ -67,48 +69,66 @@
                      in a new window showing the data posted. The idea of creating my own php page with html embedded to keep the
                       styling was going to be the plan. However, it was not possible as setting up a php server within the codeanywhere
                        environment was not something I would have been comfortable with, nor would I possibly have had the time-->
+            <!--initiate contact form with onsubmit function-->
             <form action="https://formdump.codeinstitute.net/" method="POST" target="_blank" class="contact-form"
                 onsubmit="displayThankYou()">
+                <!--name input-->
                 <label for="contact-form-name" class="contact-form-outer-label"> Name </label>
                 <input type="text" id="contact-form-name" name="name" class="contact-form-input"
                     placeholder="Enter Your Name" required>
+                <!-- phone input-->
                 <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
+                <!--phone is in two parts, country code drop down and number input -->
                 <div class="contact-form-row">
+                    <!--select element for country codes-->
                     <select id="contact-form-country-codes" name="country-code"
                         class="contact-form-country-codes"></select>
+                    <!-- phone number input -->
                     <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
                         placeholder="Enter Phone Number" required>
                 </div>
+                <!-- email input with validation for emails-->
                 <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
                 <input type="email" id="contact-form-email" class="contact-form-input" placeholder="Enter Email Address"
                     required>
+                <!-- enquiry reason radio selection section-->
                 <label for="reason" class="contact-form-outer-label"> Reason For Contact </label>
+                <!-- div to hold the radio buttons -->
                 <div class="contact-form-radio-row">
+                    <!--radio box to hold each label and button -->
                     <div class="radio-box">
                         <label for="reason1" class="contact-form-radio-label"> General Enquiry </label>
                         <input type="radio" id="reason1" name="reason" value="General" required>
                     </div>
+                    <!--radio box to hold each label and button -->
                     <div class="radio-box">
                         <label for="reason2" class="contact-form-radio-label"> Pricing Enquiry </label>
                         <input type="radio" id="reason2" name="reason" value="Pricing">
                     </div>
+                    <!--radio box to hold each label and button -->
                     <div class="radio-box">
                         <label for="reason3" class="contact-form-radio-label"> Support </label>
                         <input type="radio" id="reason3" name="reason" value="Technical">
                     </div>
                 </div>
+                <!-- submit form button -->
                 <button class="button contact-form-button" type="submit"><span>Submit </span></button>
             </form>
         </section>
+        <!-- section for the company contact details box-->
         <section class="contact-details-container">
+            <!-- map container -->
             <div class="contact-details-map">
+                <!-- iframe for the google map -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78656.03446806408!2d-2.244156582553823!3d51.970405175395655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870e1bda52abb99%3A0xcd0491511441529!2sTewkesbury!5e0!3m2!1sen!2suk!4v1689385223534!5m2!1sen!2suk"
                     width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+            <!-- company details container -->
             <div class="contact-details-company">
+                <!-- company details with a selection of h2,h3 and p tags-->
                 <h2>Find Us</h2>
                 <br>
                 <h3>Renterprise</h3>
@@ -116,9 +136,13 @@
                 <p>We are located</p>
                 <p>Tewkesbury</p>
                 <p>Gloucestershire</p>
+                <!-- email has a fontawesome for accessibility clarity and it will also open the
+                     option to email this address (computer determined method) -->
                 <h3 class="contact-details-email"><a href="mailto:info@codeinstitute.net"><i class="fa fa-envelope-o"
                             aria-hidden="true"></i>
                         Email Us : info@codeinstitute.net</a></h3>
+                <!-- phone has a fontawesome for accessibility clarity and it will also open the
+                                     option to phone this number (computer determined method) -->
                 <h3 class="contact-details-phone"><a href="tel:+442071833430"><i class="fa fa-phone"
                             aria-hidden="true"></i>
                         Call Us : (+44)207 183 3430</a></h3>
@@ -126,15 +150,16 @@
                 <p>NB.THESE CONTACTS ARE FOR CODE INSTITUTE</p>
             </div>
         </section>
-
     </main>
     <!--Footer element for the page (to be used on all pages)-->
     <footer>
+        <!-- unordered list for social network icons -->
         <ul class="social-networks">
-            <li>
-                <a href="https://facebook.com" title="Visit my Facebook page (opens in a new tab)" target="_blank"
-                    rel="noopener" aria-label="Visit my Facebook page (opens in a new tab)"><i
-                        class="fab fa-facebook"></i></a>
+            <!-- each li item contains a fontawesome icon for each company, aria label describes where link goes and states
+                    that it will open in a blank tab.-->
+            <a href="https://facebook.com" title="Visit my Facebook page (opens in a new tab)" target="_blank"
+                rel="noopener" aria-label="Visit my Facebook page (opens in a new tab)"><i
+                    class="fab fa-facebook"></i></a>
             </li>
             <li>
                 <a href="https://twitter.com" target="_blank" rel="noopener"
@@ -153,8 +178,9 @@
             </li>
         </ul>
     </footer>
-
+    <!--font awesome kit-->
     <script src="https://kit.fontawesome.com/446693abe9.js" crossorigin="anonymous"></script>
+    <!-- jquery for operations below -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
         //top options group
@@ -183,7 +209,6 @@
         function appendCountryPhoneCodes() {
             //default empty string
             let option = "";
-
             //By using += a string is concatenated, which can be appended in one block
             //start building the string, create first group
             option += "<optgroup label=\"Common Countries\"> ";
@@ -207,15 +232,11 @@
         }
 
         function displayThankYou() {
-
             setTimeout(function () {
                 window.location.href = "thanks.html";
             }, 200);
         }
     </script>
-
-
-
 </body>
 
 </html>
