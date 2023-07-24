@@ -12,3 +12,5 @@ https://www.cleancss.com/css-beautify/
 https://www.w3schools.com/howto/howto_css_animate_buttons.asp
 
 /*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+
+Reasons to avoid @import https://www.debugbear.com/blog/avoid-css-import - import is sequential which is slower than parallel.

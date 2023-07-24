@@ -12,14 +12,16 @@
                                       competitively priced for excellent investment opportunity">
     <meta name="keywords" content="rental software, rental CRM, global, secure payments, inventory management,
                                    customer management">
-
+    <!-- Link for icon in bar next to title -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- Links to external fonts/stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
+    <!-- Link to internal CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Page Title -->
     <title>Renterprise - Leading Rental CRM System</title>
 </head>
 
@@ -32,17 +34,19 @@
                 aria-label="Renterprise CRM software home page">
         </a>
         <!-- Navigation bar within the header (to be used on all pages)-->
-
         <nav class="header-menu">
+            <!-- input is an invisible checkbox for toggling the menu when burger icon is visible -->
             <input class="burger-btn" type="checkbox" id="burger-btn" />
+            <!-- label which is clickable and interacts with the checkbox -->
             <label class="burger-icon" for="burger-btn" id="burger-icon"><span class="burger-class"><i
                         class="fa fa-bars" aria-hidden="true"></i></span></label>
+            <!-- Unordered list for the menu options, each list item is a link to its respective page -->
             <ul>
                 <li>
                     <a href="index.html">Home <i class="fa fa-home"></i></a>
                 </li>
                 <li>
-                    <a href="product.html" class="active" a>Product <i class="fa fa-rocket"></i></a>
+                    <a href="product.html" class="active">Product <i class="fa fa-rocket"></i></a> <!-- active page -->
                 </li>
                 <li>
                     <a href="about.html">About <i class="fa fa-question-circle"></i></a>
@@ -51,45 +55,53 @@
                     <a href="contact.html">Enquiry <i class="fa fa-envelope"></i></a>
                 </li>
             </ul>
-
         </nav>
     </header>
     <main>
         <!--PAGE CONTENT-->
+        <!-- Section to hold all the product feature boxes -->
         <section id="product-feature-container" class="content-container product-content">
+            <!-- product-feature-box will repeat several times for each feature included-->
+            <!--OPEN FEATURE BOX -->
             <div class="product-feature-box">
+                <!-- header area for each box-->
                 <div class="product-feature-box-header">
+                    <!-- includes title in h2 and a fontawesome icon -->
                     <h2>Customer Management System</h2>
                     <i class="fa-solid fa-user" aria-hidden="true"></i>
                 </div>
+                <!-- line break styled in css-->
                 <hr>
+                <!-- details area for each feature-->
                 <div class="product-feature-box-details">
+                    <!-- text area for the details-->
                     <div class="product-feature-box-text">
                         <p>Comprehensive customer management system from lead generation to customer satisfaction
-                            reporting.
-                            The system will guide you through each stage of a customer's journey.</p>
+                            reporting. The system will guide you through each stage of a customer's journey.</p>
                         <br>
                         <p>Guiding you through will mean there are less errors on a customers file that need addressing.
                         </p>
                     </div>
+                    <!-- image area for the details-->
                     <div class="product-feature-box-image">
+                        <!-- chosen image for the feature -->
                         <img src="assets/images/crm.webp" alt="A computer with lots of feature bubbles around it"
                             style="width:100%;">
                     </div>
                 </div>
             </div>
+            <!--CLOSE FEATURE BOX -->
+            <!--OPEN FEATURE BOX -->
             <div class="product-feature-box">
                 <div class="product-feature-box-header">
                     <i class="fa-solid fa-box-archive" aria-hidden="true"></i>
                     <h2>Stock/Asset Control</h2>
-
                 </div>
                 <hr>
                 <div class="product-feature-box-details">
                     <div class="product-feature-box-text">
                         <p>Reliable inventory management, know what is available to you right now and when to expect
-                            stock
-                            returns</p>
+                            stock returns</p>
                         <br>
                         <p>Be able to give a customer an answer in regards to stock availablity, alternatives to their
                             original request or to give them dates of return. Increasing the retention rate of your
@@ -101,6 +113,8 @@
                     </div>
                 </div>
             </div>
+            <!--CLOSE FEATURE BOX -->
+            <!--OPEN FEATURE BOX -->
             <div class="product-feature-box">
                 <div class="product-feature-box-header">
                     <h2>Secure Payments</h2>
@@ -110,8 +124,7 @@
                 <div class="product-feature-box-details">
                     <div class="product-feature-box-text">
                         <p>PCI DSS compliant payments system means your customers payment information can be trusted
-                            with
-                            you.
+                            with you.
                         </p>
                         <br>
                         <p>Take payments for initial hire, sales of a new item or a new rental and create an automated
@@ -125,6 +138,8 @@
                     </div>
                 </div>
             </div>
+            <!--CLOSE FEATURE BOX -->
+            <!--OPEN FEATURE BOX -->
             <div class="product-feature-box">
                 <div class="product-feature-box-header">
                     <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
@@ -134,13 +149,11 @@
                 <div class="product-feature-box-details">
                     <div class="product-feature-box-text">
                         <p>A multi faceted part of the system allowing the management of a delivery fleet, courier
-                            services,
-                            deliveries and collections.</p>
+                            services, deliveries and collections.</p>
                         <br>
                         <p>Organise your fleet for optimal fuel consumption and save time on the road. If you only use
                             courier services for your products to ensure than despatching products is done with the
-                            greatest
-                            of ease in a well thought out process.</p>
+                            greatest of ease in a well thought out process.</p>
                     </div>
                     <div class="product-feature-box-image">
                         <img src="assets/images/delivery.webp" alt="A Lorry moving fast. Quick delivery"
@@ -148,12 +161,15 @@
                     </div>
                 </div>
             </div>
+            <!--CLOSE FEATURE BOX -->
         </section>
-
     </main>
     <!--Footer element for the page (to be used on all pages)-->
     <footer>
+        <!-- unordered list for social network icons -->
         <ul class="social-networks">
+            <!-- each li item contains a fontawesome icon for each company, aria label describes where link goes and states
+            that it will open in a blank tab.-->
             <li>
                 <a href="https://facebook.com" title="Visit my Facebook page (opens in a new tab)" target="_blank"
                     rel="noopener" aria-label="Visit my Facebook page (opens in a new tab)"><i
@@ -181,12 +197,3 @@
 </body>
 
 </html>
-<!-- TO ADD TO PRODUCT PAGE 
-                <h3>Full Customer Management System</h3>
-                <h3>Stock/Asset Control</h3>
-                <h3>Secure Payments</h3>
-                <h3>Logistics Assistance</h3>
-                Comprehensive customer management system from lead generation to customer satisfaction reporting
-                Inventory management, know what is available to you right now and when to expect stock returns
-                Secure payments, PCI DSS compliant payments system means your customers payment information can be trusted with you
-                Automated payments, ongoing payments for rental are taken with no additional staff input-->
