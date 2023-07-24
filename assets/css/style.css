@@ -173,7 +173,6 @@ smaller, to the point it cannot be seen. Which it will without this setting */
 .header-logo {
     height: 100px;
     width: 100px;
-
     min-height: 100px;
     min-width: 100px;
     background-color: #1D5D40;
@@ -266,10 +265,11 @@ footer {
 
 /* social-networks ul css set the text to be centre aligned in a flex row 
 with centred items*/
-.social-networks {
+ul.social-networks {
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -298,9 +298,9 @@ of the theme.*/
     color: #C9F0FF;
 }
 
-/*100% width flet space around to evenly space content with gaps. (image and 
-text). Fixed Height of 400px (default, can be changed in media queries). Hide
-any overflow to stop it escape the container. BG white in colour.*/
+/*100% width flex space around to evenly space content with gaps. (image and 
+text). Fixed height of 400px (default, can be changed in media queries). Hide
+any overflow to stop it escape the container.*/
 .hero-container {
     display: flex;
     flex-direction: row;
@@ -366,7 +366,6 @@ auto left/right margins to centre the content.*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
 
 /*out-the-box section on the index page, set a shadow at the base to create 
@@ -502,7 +501,6 @@ will stack on top of each other instead of putting them into a row, creating the
 /* ABOUT PAGE/THANKS PAGE */
 /*Content on the pages are similar. Reusing the css styling. Different class names
 for clear separation between pages*/
-
 /*the main box, set it green and 80% of the page*/
 .about-box,
 .thanks-box {
@@ -794,7 +792,6 @@ row to start witth*/
     flex-direction: row;
     width: 100%;
     height: auto;
-
 }
 
 /* styling for content text in each product feature box */
@@ -944,7 +941,6 @@ row to start witth*/
 
     /*tried doing a singular selector, but need to use nth child to override the
       previous nth child use this would be due to levels of specificity*/
-
     /*product.html - for all product feature boxes, remove floats and centre
       align them. (Remove stagger) */
     .product-feature-box:nth-child(odd),
@@ -1059,7 +1055,6 @@ row to start witth*/
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-
     }
 
     /* contact.html - change iframe to have relative positioning, so it becomes
@@ -1131,7 +1126,6 @@ row to start witth*/
 
     /*change height of header*/
     header {
-
         width: 100%;
         height: 75px;
     }
@@ -1145,7 +1139,6 @@ row to start witth*/
     /* change size of logo to adapt for smaller height header on smaller 
        resolutions */
     .header-logo {
-
         height: 75px;
         width: 75px;
         min-height: 1px;
@@ -1186,13 +1179,13 @@ row to start witth*/
         animation: fadeIn 0.5s;
     }
 
-    /* set the styling of each list item in the menu that appears across the width of the screen */
+    /* set the styling of each list item in the menu that appears across the 
+       width of the screen */
     .burger-btn:checked~ul li {
         position: relative;
         background: #1D5D40;
         width: 25%;
         height: auto;
-        position: relative;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -1580,7 +1573,6 @@ row to start witth*/
     /* product.html - change box size for the product feature image */
     .product-feature-box-image {
         width: 70%;
-
     }
 }
 
@@ -1648,7 +1640,6 @@ row to start witth*/
     .product-feature-box-text {
         font-size: 80%;
     }
-
 }
 
 /*For screens of resolution no greater in width than 300*/

@@ -7,3 +7,8 @@ Contrast calculator https://app.contrast-finder.org/ also achieveable when a pag
 Alternating DIV sides (product.html)http://www.java2s.com/example/html-css/css-layout/alternating-left-and-right-positioning-with-css.html
 
 <a href="https://imageresizer.com/" target="_blank">Image Resizer</a>
+
+https://www.cleancss.com/css-beautify/
+https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+
+/*Typical media query breakpoints from : https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
