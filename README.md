@@ -1,39 +1,77 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Renterprise
 
-Welcome,
+Renterprise is a brand new solution that encompasses many key qualities of CRM software and applies it to the ever growing rental sector.
+There are organisations that are struggling to sell stock and customers that do not want to have the outlay of purchasing a product. 
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+More people are turning to rentals as the world finances are in disarray and they can have your product at a much more managable cost. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+**So why not start with Renterprise today?**
 
-## Codeanywhere Reminders
+<!--
+Heading	
+# H1
+## H2
+### H3
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+Bold	**bold text**
 
-`python3 -m http.server`
+Italic	*italicized text*
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Blockquote	> blockquote
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Ordered List	
+1. First item
+2. Second item
+3. Third item
 
-`http_server`
+Unordered List	
+- First item
+- Second item
+- Third item
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Code	`code`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Horizontal Rule	---
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Link	[title](https://www.example.com)
 
-To log into the Heroku toolbelt CLI:
+Image	![alt text](image.jpg)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Table	| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Fenced Code Block	```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
 
----
+Footnote	Here's a sentence with a footnote. [^1]
 
-Happy coding!
+[^1]: This is the footnote.
+
+Heading ID	### My Great Heading {#custom-id}
+
+Definition List	term
+: definition
+
+Strikethrough	~~The world is flat.~~
+
+Task List	
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+Emoji
+(see also Copying and Pasting Emoji)	That is so funny! :joy:
+
+Highlight	I need to highlight these ==very important words==.
+
+Subscript	H~2~O
+
+Superscript	X^2^
+-->
