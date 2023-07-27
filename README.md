@@ -7,6 +7,27 @@ More people are turning to rentals as the world finances are in disarray and the
 
 **So why not start with Renterprise today?**
 
+# User Experience Design
+
+## Target Audience
+
+- Current business owners looking to change their business model
+- Start up entrepenuers looking to offer something new
+
+## Website User Stories
+
+- I want to find product information quickly
+- I want to be able to contact the company for more information
+- I want to know where the company is based (working hours of support)
+- I want to improve my business, will this help me?
+
+## Wireframe Design
+
+Website wireframe were created using Figma[^1] :
+![Image of wireframe created for Renterprise website](assets/readme/renterprise-wireframe.png)
+
+# References
+[^1]: https://www.figma.com/
 <!--
 Heading	
 # H1
