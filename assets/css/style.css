@@ -939,6 +939,10 @@ row to start witth*/
         font-size: 75%;
     }
 
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 200%;
+    }
     /*tried doing a singular selector, but need to use nth child to override the
       previous nth child use this would be due to levels of specificity*/
     /*product.html - for all product feature boxes, remove floats and centre
@@ -1005,6 +1009,11 @@ row to start witth*/
     /*Decrease nested span in h1 font size*/
     h1 span {
         font-size: 50%;
+    }
+
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 180%;
     }
 
     /* change font size of ul elements in header */
@@ -1229,6 +1238,11 @@ row to start witth*/
         margin-left: 5%;
     }
 
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 130%;
+    }
+
     /* product.html - change font size for header in each product feature box */
     .product-feature-box-header {
         font-size: 60%;
@@ -1285,6 +1299,11 @@ row to start witth*/
     /* index.html - change position of text in proposition card */
     .index-proposition-card-text {
         top: 72%;
+    }
+
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 110%;
     }
 }
 
@@ -1554,6 +1573,11 @@ row to start witth*/
         font-size: 70%;
     }
 
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 80%;
+    }
+
     /*product.html - when this size, centre the h2 in the header, rather than 
       justify to a side */
     .product-feature-box-header:nth-child(odd)>h2,
@@ -1628,6 +1652,11 @@ row to start witth*/
     /* contact.html - change size of p tags in company details */
     .contact-details-company>p {
         font-size: 60%;
+    }
+
+    /* product.html - change h1 font size in full width row */
+    .full-width-row>h1 {
+        font-size: 65%;
     }
 
     /* product.html - change font size of h2 tags in the headers of the feature
