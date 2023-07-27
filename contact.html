@@ -77,40 +77,44 @@
                 <input type="text" id="contact-form-name" name="name" class="contact-form-input"
                     placeholder="Enter Your Name" required>
                 <!-- phone input-->
-                <label for="contact-form-phone" class="contact-form-outer-label"> Phone Number </label>
-                <!--phone is in two parts, country code drop down and number input -->
-                <div class="contact-form-row">
-                    <!--select element for country codes-->
-                    <select id="contact-form-country-codes" name="country-code"
-                        class="contact-form-country-codes"></select>
-                    <!-- phone number input -->
-                    <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
-                        placeholder="Enter Phone Number" required>
-                </div>
+                <fieldset class="contact-form-row">
+                    <legend class="contact-form-outer-label"> Phone Number </legend>
+                    <!--phone is in two parts, country code drop down and number input -->
+                    <!--<div class="contact-form-row">-->
+                        <!--select element for country codes-->
+                        <select id="contact-form-country-codes" name="country-code"
+                            class="contact-form-country-codes"></select>
+                        <!-- phone number input -->
+                        <input type="text" id="contact-form-phone" name="phone" class="contact-form-phone"
+                            placeholder="Enter Phone Number" required>
+                    <!--</div>-->
+                </fieldset>
                 <!-- email input with validation for emails-->
                 <label for="contact-form-email" class="contact-form-outer-label"> Email </label>
                 <input type="email" id="contact-form-email" class="contact-form-input" placeholder="Enter Email Address"
                     required>
                 <!-- enquiry reason radio selection section-->
-                <label class="contact-form-outer-label"> Reason For Contact </label>
-                <!-- div to hold the radio buttons -->
-                <div class="contact-form-radio-row">
-                    <!--radio box to hold each label and button -->
-                    <div class="radio-box">
-                        <label for="reason1" class="contact-form-radio-label"> General Enquiry </label>
-                        <input type="radio" id="reason1" name="reason" value="General" required>
+                <fieldset>
+                    <legend class="contact-form-outer-label"> Reason For Contact</legend>
+                    <!-- div to hold the radio buttons -->
+                    <div class="contact-form-radio-row">
+                        <!--radio box to hold each label and button -->
+                        <div class="radio-box">
+                            <label for="reason1" class="contact-form-radio-label"> General Enquiry </label>
+                            <input type="radio" id="reason1" name="reason" value="General" required>
+                        </div>
+                        <!--radio box to hold each label and button -->
+                        <div class="radio-box">
+                            <label for="reason2" class="contact-form-radio-label"> Pricing Enquiry </label>
+                            <input type="radio" id="reason2" name="reason" value="Pricing">
+                        </div>
+                        <!--radio box to hold each label and button -->
+                        <div class="radio-box">
+                            <label for="reason3" class="contact-form-radio-label"> Support </label>
+                            <input type="radio" id="reason3" name="reason" value="Technical">
+                        </div>
                     </div>
-                    <!--radio box to hold each label and button -->
-                    <div class="radio-box">
-                        <label for="reason2" class="contact-form-radio-label"> Pricing Enquiry </label>
-                        <input type="radio" id="reason2" name="reason" value="Pricing">
-                    </div>
-                    <!--radio box to hold each label and button -->
-                    <div class="radio-box">
-                        <label for="reason3" class="contact-form-radio-label"> Support </label>
-                        <input type="radio" id="reason3" name="reason" value="Technical">
-                    </div>
-                </div>
+                </fieldset>
                 <!-- submit form button -->
                 <button class="button contact-form-button" type="submit"><span>Submit </span></button>
             </form>

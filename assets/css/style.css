@@ -110,10 +110,11 @@ h3 {
     right: 0;
 }
 
-/* Default font for p & label is the logo in the font, not used for headers as
+/* Default font for p, label and legend is the logo in the font, not used for headers as
  it is slim. */
 p,
-label {
+label,
+legend {
     font-family: 'Hind', sans-serif;
     color: #FFFFFF;
     text-shadow: 0px 1px 5px #000000;
@@ -1639,8 +1640,9 @@ row to start witth*/
         font-size: 80%
     }
 
-    /* contact.html - change size of font in labels */
-    label.contact-form-outer-label {
+    /* contact.html - change size of font in labels/legends */
+    label.contact-form-outer-label,
+    legend.contact-form-outer-label {
         font-size: 90%;
     }
 
