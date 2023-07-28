@@ -1,4 +1,12 @@
 # Renterprise
+<div style="width:100%; height:100px; background-color:#1D5D40">
+<a href="index.html" target="_self">
+            <img class="header-logo" src="assets/images/logo-100.webp" alt="Renterprise"
+                aria-label="Renterprise CRM software home page" style="margin-left:auto;margin-right:auto;">
+        </a>
+</div>
+
+/workspaces/portfolio1-renterprise/assets/images/logo-100.webp>
 
 Renterprise is a brand new solution that encompasses many key qualities of CRM software and applies it to the ever growing rental sector.
 There are organisations that are struggling to sell stock and customers that do not want to have the outlay of purchasing a product. 
@@ -76,7 +84,7 @@ The overall palette was picked with the website tools which enabled complementar
 
 ## Typography
 
-The font chosen, was initially based upon the font in the logo - Hind Light, a secondary font of Roboto was chosen as it was visually complementary to this initial font. Roboto features as the h1,h2 and h3 font. All other text within the website (barring Google Map) is Hind. These fonts were acquired from Google Fonts[^4]
+The font chosen, was initially based upon the font in the logo - Hind Light, a secondary font of Roboto was chosen as it was visually complementary to this initial font. Roboto features as the h1,h2 and h3 font. All other text within the website (barring Google Map) is Hind. These fonts were acquired from Google Fonts[^4]. If loading of the font(s) fail for any reason then there is the font Sans Serif chosen as a backup display font.
 
 ## Tab Bar
 
@@ -118,7 +126,7 @@ workflow.webp [^16]
 [^13] Reporting Image : https://www.freepik.com/free-vector/site-stats-concept-illustration_7140739.htm#query=CRM&position=42&from_view=search&track=sph
 [^14] Servers Image : https://www.freepik.com/free-vector/data-center-isometric-composition_4327444.htm#page=2&query=computing&position=0&from_view=search&track=sph
 [^15] Streamline AI Image : https://www.freepik.com/free-ai-image/colorful-image-road-with-lights-it_42026233.htm#query=streamline&position=2&from_view=search&track=ais_ai_generated
-[^16] Workflow Image
+[^16] Workflow Image : https://www.vecteezy.com/vector-art/10682818-receive-orders-and-prepare-to-pack-products-to-send-to-customers-beginnings-as-a-merchant-and-small-business-owner
 
 <!--
 Heading	
