@@ -1,12 +1,10 @@
 # Renterprise
-<div style="width:100%; height:100px; background-color:#1D5D40">
+<div width="100%"style="width:100%; height:100px; background-color:#1D5D40; margin-left:auto;margin-right:auto;">
 <a href="index.html" target="_self">
-            <img class="header-logo" src="assets/images/logo-100.webp" alt="Renterprise"
-                aria-label="Renterprise CRM software home page" style="margin-left:auto;margin-right:auto;">
+            <img class="header-logo" src="assets/readme/logo-readme-banner.webp" alt="Renterprise"
+                aria-label="Renterprise CRM software home page">
         </a>
 </div>
-
-/workspaces/portfolio1-renterprise/assets/images/logo-100.webp>
 
 Renterprise is a brand new solution that encompasses many key qualities of CRM software and applies it to the ever growing rental sector.
 There are organisations that are struggling to sell stock and customers that do not want to have the outlay of purchasing a product. 
