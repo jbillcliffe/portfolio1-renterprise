@@ -131,11 +131,10 @@ A responsive navigation bar included in the header of all the pages :
 ![Initial burger menu button on Renterprise website](assets/readme/menu/menu-responsive-2.png)
 
 #### Burger Menu Responsive Drop
-Initial Style
 ![Initial burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-1.png)
-Lower Resolution Style
+#### Lower Resolution Burger Menu Drop
 ![Secondary burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-2.png)
-Galaxy Fold Resolution (280px)
+#### Galaxy Fold Resolution Drop (280px)
 ![Burger menu drop style at Galaxy Fold split screen resolution on Renterprise website](assets/readme/menu/menu-drop-galaxy-fold.png)
 
 ## Proposed Features
