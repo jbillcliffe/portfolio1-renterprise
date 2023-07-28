@@ -121,7 +121,22 @@ Images were all sourced for free :
 
 A responsive navigation bar included in the header of all the pages :
 
+#### Default Size
 ![Default navigation bar on Renterprise website](assets/readme/menu/menu-wide.png)
+
+#### Smaller Navigation Bar
+![Smaller navigation bar on Renterprise website](assets/readme/menu/menu-responsive-1.png)
+
+#### Burger Menu At 705px
+![Initial burger menu button on Renterprise website](assets/readme/menu/menu-responsive-2.png)
+
+#### Burger Menu Responsive Drop
+Initial Style
+![Initial burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-1.png)
+Lower Resolution Style
+![Secondary burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-2.png)
+Galaxy Fold Resolution (280px)
+![Burger menu drop style at Galaxy Fold split screen resolution on Renterprise website](assets/readme/menu/menu-drop-galaxy-fold.png)
 
 ## Proposed Features
 
