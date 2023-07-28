@@ -1,5 +1,5 @@
 # Renterprise
-<div width="100%"style="width:100%; height:100px; background-color:#1D5D40; margin-left:auto;margin-right:auto;">
+<div style="width:100%; height:100px; background-color:#1D5D40; margin-left:auto;margin-right:auto;">
 <a href="index.html" target="_self">
             <img class="header-logo" src="assets/readme/logo-readme-banner.png" alt="Renterprise"
                 aria-label="Renterprise CRM software home page">
