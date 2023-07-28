@@ -40,9 +40,9 @@ More people are turning to rentals as the world finances are in disarray and the
 
 ## Wireframe Design
 
-Website wireframe were created using Figma[^1]. The image below shows the concept for the index page, which would be the underlying template for other pages.
+Website wireframe was created using Figma[^1]. The image below shows the concept for the index page, which would be the underlying template for other pages.
 
-It includes an example of a responsive page for mobile and how the screen resolution change would affect that particular page.
+It includes an example of a responsive page (product.html) for mobile and how the screen resolution change would affect that particular page.
 
 There is also a flow diagram for the concept of the contact form.
 
@@ -52,7 +52,7 @@ There is also a flow diagram for the concept of the contact form.
 
 The logo was created using the website LOGO.com.[^2]
 
-### Process 
+### Logo Process 
 Using their step by step builder a full brand could be created from scratch, firstly the selection of software industry was chosen as it was accurate and appropriate.
 
 ![Logo and brand creation for Renterprise, first step](assets/readme/design/logo-step-1.png)
@@ -73,39 +73,56 @@ This was then the branding provided.
 
 ![Full branding theme for Renterprise](assets/readme/design/initial-brand-board.png)
 
-## Colour Theme
+## Breakdown of Design
+
+### Colour Theme
 
 Colour theme was initially chosen and subsequently revised with Coolors.[^3] 
 The overall palette was picked with the website tools which enabled complementary and contrasting colour choices based upon the initial colour from the logo.
 
 ![Initial colour palette for Renterprise website](assets/readme/design/initial-colour-palette.png)
 
-## Typography
+### Typography
 
 The font chosen, was initially based upon the font in the logo - Hind Light, a secondary font of Roboto was chosen as it was visually complementary to this initial font. Roboto features as the h1,h2 and h3 font. All other text within the website (barring Google Map) is Hind. These fonts were acquired from Google Fonts[^4]. If loading of the font(s) fail for any reason then there is the font Sans Serif chosen as a backup display font.
 
-## Tab Bar
+### Tab Bar
 
 It is desired to have a reminder (especially with current web browsers) of the page even if the user loads another page in a new tab. Text alone is never sufficient as at first glance, the name may not all be seen when too many tabs are open. So an icon is key. Also ensuring the first part of the text contains the company name. This then led to the choice of the title being "Renterprise - Leading Rental CRM System", the consumer would see the word "Renterprise" for the longest as more tabs could be added. There is also the logo included for further clarity.
 
 ![Tab bar design for the Renterprise website](assets/readme/design/tab-bar-icon-and-title.png)
 
-## Images
+### Images
 
 Images were all sourced for free :
-crm.webp[^5]
-delivery.webp[^6]
-growth.webp[^7]
-inventory.webp[^8]
-money.webp[^9]
-move-forward.webp[^10]
-opportunity.webp[^11]
-payments.webp[^12]
-reporting.webp [^13]
-server.webp [^14]
-streamline.webp [^15]
-workflow.webp [^16]
 
+| Filename                | Used         |                                                                         |
+| ----------------------- | ------------ | ----------------------------------------------------------------------- |
+| crm.webp[^5]            | product.html | [View](assets/images/crm.webp "Customer Relationship Management Image") |
+| delivery.webp[^6]       | product.html | [View](assets/images/delivery.webp "Delivery Image")                    |
+| growth.webp[^7]         | index.html   | [View](assets/images/growth.webp "Growth Image")                        |
+| inventory.webp[^8]      | product.html | [View](assets/images/inventory.webp "Inventory Image")                  |
+| money.webp[^9]          | index.html   | [View](assets/images/money.webp "Money Image")                          |
+| move-forward.webp[^10]  | N/A          | [View](assets/images/move-forward.webp "Forward Arrows Image")          |
+| opportunity.webp[^11]   | index.html   | [View](assets/images/opportunity.webp "Opportunity Image")              |
+| payments.webp[^12]      | product.html | [View](assets/images/payments.webp "Card Payments Image")               |
+| reporting.webp [^13]    | N/A          | [View](assets/images/reporting.webp "Reporting Image")                  |
+| server.webp [^14]       | N/A          | [View](assets/images/server.webp "Server Image")                        |
+| streamline.webp [^15]   | index.html   | [View](assets/images/streamline.webp "Streamline Image")                |
+| workflow.webp [^16]     | N/A          | [View](assets/images/workflow.webp "Workflow Image")                    |
+
+*NB. All those that are N/A were due to be entered as further entries into the product.html page*
+# Features
+
+## Existing Features
+
+### Navigation Bar
+
+A responsive navigation bar included in the header of all the pages :
+
+![Default navigation bar on Renterprise website](assets/readme/menu/menu-wide.png)
+
+## Propose Features
 
 
 # References
