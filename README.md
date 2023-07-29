@@ -16,7 +16,6 @@ More people are turning to rentals as the world finances are in disarray and the
 # User Experience Design
 
 ## Target Audience
-
 - Current business owners looking to change their business model
 - Start up entrepenuers looking to offer something new
 
@@ -39,17 +38,12 @@ More people are turning to rentals as the world finances are in disarray and the
     3. The product.html page provides greater emphasis on the features from the index.html page.
 
 ## Wireframe Design
-
 Website wireframe was created using Figma[^1]. The image below shows the concept for the index page, which would be the underlying template for other pages.
-
 It includes an example of a responsive page (product.html) for mobile and how the screen resolution change would affect that particular page.
-
 There is also a flow diagram for the concept of the contact form.
-
 ![Image of wireframe created for Renterprise website](assets/readme/design/renterprise-wireframe.png)
 
 ## Logo
-
 The logo was created using the website LOGO.com.[^2]
 
 ### Logo Process 
@@ -76,24 +70,20 @@ This was then the branding provided.
 ## Breakdown of Design
 
 ### Colour Theme
-
 Colour theme was initially chosen and subsequently revised with Coolors.[^3] 
 The overall palette was picked with the website tools which enabled complementary and contrasting colour choices based upon the initial colour from the logo.
 
 ![Initial colour palette for Renterprise website](assets/readme/design/initial-colour-palette.png)
 
 ### Typography
-
 The font chosen, was initially based upon the font in the logo - Hind Light, a secondary font of Roboto was chosen as it was visually complementary to this initial font. Roboto features as the h1,h2 and h3 font. All other text within the website (barring Google Map) is Hind. These fonts were acquired from Google Fonts[^4]. If loading of the font(s) fail for any reason then there is the font Sans Serif chosen as a backup display font.
 
 ### Tab Bar
-
 It is desired to have a reminder (especially with current web browsers) of the page even if the user loads another page in a new tab. Text alone is never sufficient as at first glance, the name may not all be seen when too many tabs are open. So an icon is key. Also ensuring the first part of the text contains the company name. This then led to the choice of the title being "Renterprise - Leading Rental CRM System", the consumer would see the word "Renterprise" for the longest as more tabs could be added. There is also the logo included for further clarity.
 
 ![Tab bar design for the Renterprise website](assets/readme/design/tab-bar-icon-and-title.png)
 
 ### Images
-
 Images were all sourced for free :
 
 | Filename                | Used         |                                                                         |
@@ -118,7 +108,6 @@ Images were all sourced for free :
 ## Existing Features
 
 ### Navigation Bar
-
 A responsive navigation bar included in the header of all the pages, when each link is hovered over. It will "glow" blue to show that
 there is an interaction to be had. On the active page, the link will have a white underline. The below image features the hover and
 underline present.
@@ -144,10 +133,9 @@ underline present.
 ![Burger menu drop style at Galaxy Fold split screen resolution on Renterprise website](assets/readme/menu/menu-drop-galaxy-fold.png)
 
 ### Footer
-
 A responsive social media links area included in the footer of all the pages, it scales the size of the Fontawesome[^17]
 icons decreases/increases on the pages. Each one has an aria-label which describes where the link goes to and explains that it will open
-in a seperate window.
+in a seperate window. The footer also includes the same blue hover as the menu, for consistency and clarity to the user.
 
 #### Facebook
 ![Footer on Renterprise website, showing Facebook label](assets/readme/footer/footer-facebook-label.png)
@@ -160,6 +148,34 @@ in a seperate window.
 
 #### Instagram
 ![Footer on Renterprise website, showing Instagram label](assets/readme/footer/footer-instagram-label.png)
+
+### Contact Form
+A validated form which will ask for a name, phone number, email and the reason for their contact. 
+- The name is validated by expecting a string.
+- The phone, in the same way is expecting a string. *Country Code has a default of United Kingdom*
+- The email is expecting a string with the correct syntax, validated by html itself.
+- The reason is expecting a selection. Cannot be left with no selection.
+
+#### Name Validation
+![Name validation on Renterprise website contact form](assets/readme/contact/contact-validate-name.png)
+
+#### Phone Validation
+![Phone validation on Renterprise website contact form](assets/readme/contact/contact-validate-phone.png)
+
+#### Email Validation
+Requiring a string
+
+![Primary Email validation on Renterprise website contact form](assets/readme/contact/contact-validate-email-1.png)
+
+Requiring the correct syntax for an email
+
+![Secondary Email validation on Renterprise website contact form](assets/readme/contact/contact-validate-email-2.png)
+
+#### Reason Validation
+![Radio group validation on Renterprise website contact form](assets/readme/contact/contact-validate-radio.png)
+
+#### Country Codes
+![Phone country code selection on Renterprise website contact form](assets/readme/contact/contact-country-codes.png)
 
 ## Proposed Features
 
