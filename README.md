@@ -177,6 +177,27 @@ Requiring the correct syntax for an email
 #### Country Codes
 ![Phone country code selection on Renterprise website contact form](assets/readme/contact/contact-country-codes.png)
 
+#### Form Dump Response
+![Phone country code selection on Renterprise website contact form](assets/readme/contact/contact-country-codes.png)
+
+#### Secret Thanks Page Response
+![Successful form submission dump from contact form on Renterprise website](assets/readme/thanks/thanks-wide.png)
+
+### Contact Us Details
+A section on the contact.html page which contains the (fictional) company address and contact details (which link to Code Institute).
+The map is responsive and always centres on the location required.
+
+The phone number and email both perform functions related to their content. Clicking on the phone number will load up the device 
+calling function (such as Skype on a PC). Clicking on the email will load the default device emailing system, such as Outlook on a PC.
+
+#### Map & Details
+![Map and contact details on the Renterprise website contact page](assets/readme/contact/contact-map-wide.png)
+
+### Product Features Page
+A page on the website that displays the features of the proposed product. Each feature clearly seperated so that a prospective customer
+can carefully evaluate each part of the software.
+![Product features on the Renterprise website product page](assets/readme/product/product-wide.png)
+
 ## Proposed Features
 
 # References
