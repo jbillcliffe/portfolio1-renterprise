@@ -119,9 +119,13 @@ Images were all sourced for free :
 
 ### Navigation Bar
 
-A responsive navigation bar included in the header of all the pages :
+A responsive navigation bar included in the header of all the pages, when each link is hovered over. It will "glow" blue to show that
+there is an interaction to be had. On the active page, the link will have a white underline. The below image features the hover and
+underline present.
 
-#### Default Size
+![Navigation bar on Renterprise website with all features visible](assets/readme/menu/menu-features.png)
+
+#### Default Navigation Bar Style
 ![Default navigation bar on Renterprise website](assets/readme/menu/menu-wide.png)
 
 #### Smaller Navigation Bar
@@ -132,13 +136,32 @@ A responsive navigation bar included in the header of all the pages :
 
 #### Burger Menu Responsive Drop
 ![Initial burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-1.png)
+
 #### Lower Resolution Burger Menu Drop
 ![Secondary burger menu drop style on Renterprise website](assets/readme/menu/menu-drop-responsive-2.png)
+
 #### Galaxy Fold Resolution Drop (280px)
 ![Burger menu drop style at Galaxy Fold split screen resolution on Renterprise website](assets/readme/menu/menu-drop-galaxy-fold.png)
 
-## Proposed Features
+### Footer
 
+A responsive social media links area included in the footer of all the pages, it scales the size of the Fontawesome[^17]
+icons decreases/increases on the pages. Each one has an aria-label which describes where the link goes to and explains that it will open
+in a seperate window.
+
+#### Facebook
+![Footer on Renterprise website, showing Facebook label](assets/readme/footer/footer-facebook-label.png)
+
+#### Twitter (Now "X/Twitter")
+![Footer on Renterprise website, showing Twitter label](assets/readme/footer/footer-twitter-label.png)
+
+#### YouTube
+![Footer on Renterprise website, showing YouTube label](assets/readme/footer/footer-youtube-label.png)
+
+#### Instagram
+![Footer on Renterprise website, showing Instagram label](assets/readme/footer/footer-instagram-label.png)
+
+## Proposed Features
 
 # References
 [^1]: Figma is a free website for designing storyboards and wireframes : https://www.figma.com/
@@ -157,6 +180,7 @@ A responsive navigation bar included in the header of all the pages :
 [^14]: Servers Image : https://www.freepik.com/free-vector/data-center-isometric-composition_4327444.htm#page=2&query=computing&position=0&from_view=search&track=sph
 [^15]: Streamline AI Image : https://www.freepik.com/free-ai-image/colorful-image-road-with-lights-it_42026233.htm#query=streamline&position=2&from_view=search&track=ais_ai_generated
 [^16]: Workflow Image : https://www.vecteezy.com/vector-art/10682818-receive-orders-and-prepare-to-pack-products-to-send-to-customers-beginnings-as-a-merchant-and-small-business-owner
+[^17]: Fontawesome a large database of free (and premium) icons : https://www.fontawesome.com
 
 <!--
 Heading	
