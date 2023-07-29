@@ -198,6 +198,10 @@ A page on the website that displays the features of the proposed product. Each f
 can carefully evaluate each part of the software.
 ![Product features on the Renterprise website product page](assets/readme/product/product-wide.png)
 
+### About Page
+A simple page, which has text to give a bit of detail about myself, the reasons for the software and the history of the evolution of the concept.
+![About page on the Renterprise website](assets/readme/about/about-wide.png)
+
 ## Proposed Features
 
 # References
