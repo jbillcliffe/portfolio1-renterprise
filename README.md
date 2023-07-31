@@ -5,8 +5,8 @@
                 aria-label="Renterprise CRM software home page">
         </a>
 </div>
-**Click this banner to load the website.**
 
+***Click this banner to load the website.***
 
 Renterprise is a brand new solution that encompasses many key qualities of CRM software and applies it to the ever growing rental sector.
 There are organisations that are struggling to sell stock and customers that do not want to have the outlay of purchasing a product. 
@@ -15,14 +15,13 @@ More people are turning to rentals as the world finances are in disarray and the
 
 **So why not start with Renterprise today?**
 
-
 ![Responsive view of webpage ](assets/readme/design/responsive-website.png)
 
 # User Experience Design
 
 ## Target Audience
 - Current business owners looking to change their business model
-- Start up entrepenuers looking to offer something new
+- Start up entrepreneurs  looking to offer something new
 
 ## Website User Stories
 
@@ -140,7 +139,7 @@ underline present.
 ### Footer
 A responsive social media links area included in the footer of all the pages, it scales the size of the Fontawesome[^17]
 icons decreases/increases on the pages. Each one has an aria-label which describes where the link goes to and explains that it will open
-in a seperate window. The footer also includes the same blue hover as the menu, for consistency and clarity to the user.
+in a separate window. The footer also includes the same blue hover as the menu, for consistency and clarity to the user.
 
 #### Facebook
 ![Footer on the Renterprise website, showing Facebook label](assets/readme/footer/footer-facebook-label.png)
@@ -156,7 +155,7 @@ in a seperate window. The footer also includes the same blue hover as the menu, 
 
 ### Index/Home Page
 Contains the initial key information to draw in the user. A hero created from scratch (image[^7] freely sourced). Proposition cards to engage
-with the website user and give them the desire to dig deeper on the webite or to contaact directly.
+with the website user and give them the desire to dig deeper on the website or to contact directly.
 
 #### Hero Container/Image
 A clear message right on the front of the page, issuing the first key question for most businesses - is it worth it?
@@ -213,7 +212,7 @@ calling function (such as Skype on a PC). Clicking on the email will load the de
 ![Map and contact details on the Renterprise website contact page](assets/readme/contact/contact-map-wide.png)
 
 ### Product Features Page
-A page on the website that displays the features of the proposed product. Each feature clearly seperated so that a prospective customer
+A page on the website that displays the features of the proposed product. Each feature clearly separated so that a prospective customer
 can carefully evaluate each part of the software.
 ![Product features on the Renterprise website product page](assets/readme/product/product-wide.png)
 
@@ -228,26 +227,26 @@ A simple page, which has text to give a bit of detail about myself, the reasons 
 - Jquery phone validation based on country code selected. This was initially in the scope, but it would have become a problem.
 - Chat feature, if you are selling something, you need to have a decent response time.
 
-## Testing
+# Testing
 
-### HTML and CSS Validation Tool 
-The W3C Marup Validation Service[^20] was used to validate the html. Things were all in place on the GitHub Pages for testing HTML.
+## HTML and CSS Validation Tool 
+The W3C Markup Validation Service[^20] was used to validate the html. Things were all in place on the GitHub Pages for testing HTML.
 For the CSS, I had to copy the full style.css. Results shown in the table below.
 
-#### CSS Validation - All Passed
+### CSS Validation - All Passed
 Only one page to validate for CSS, which is below :
 
 ![Validation for Renterprise style.css](assets/readme/validate/style-validated.png)
 
-#### HTML Validation -- All passed
-Each page needs valition :
+### HTML Validation -- All passed
+Each page needs validation :
 
 ![Validation for Renterprise index.html](assets/readme/validate/index-validated.png)
 
-#### Contact Page HTML Validation Error
+### Contact Page HTML Validation Error
 
 contact.html initially failed this test as there was a group in the form with no fixed label to it. 
-This was ammended and then retested by changing to a fieldset with a legend.
+This was amended and then retested by changing to a fieldset with a legend.
 To view the remaining tests, click on each "View" below :
 
 | Page         | URL          |                                                                                            |
@@ -258,7 +257,7 @@ To view the remaining tests, click on each "View" below :
 | Product      | product.html | [View](assets/readme/validate/product-validated.png "product.html successful validation")  |
 | Thanks       | thanks.html  | [View](assets/readme/validate/thanks-validated.png "thanks.html successful validation")    |
 
-### WAVE, Google Chrome extension.
+## WAVE, Google Chrome extension.
 WAVE is a measure of website issues. Some were fixable, the table below has a record of testing and fixes where applicable.
 
 | Page         | Issues          | Solution/Final Report                                                   |
@@ -275,7 +274,7 @@ This empty label is for an invisible checkbox. This checkbox is the trigger for 
 
 The tutorial for this is loosely based from : https://codepen.io/erikterwan/pen/EVzeRP. 
 
-### Lighthouse, Google Chrome Inspect (F12) Mode
+## Lighthouse, Google Chrome Inspect (F12) Mode
 
 Scoring for Lighthouse was done on the Index (landing) page, and what would be the most demanding page (contact.html) :
 |  Page   |  Source |                                                                                                            |
@@ -289,10 +288,10 @@ The lighthouse testing did flag an issue with the iframe for the map, not having
 
 ## Further Testing
 - The Website was tested on Google Chrome, Microsoft Edge and Mozilla Firefox
-- Although not viewed on multiple phyiscal devices. Google Chrome's development console allows for a very large amount of emulated devices to be used.
+- Although not viewed on multiple physical devices. Google Chrome's development console allows for a very large amount of emulated devices to be used.
 - Repeated testing through each page, ensured links were correctly working on each page.
 
-## Deployment
+# Deployment
 The steps below were followed to deploy the page to GitHub pages :
 
 From Github, click on the repository required :
@@ -306,6 +305,23 @@ Select "Pages, then select source "Deploy From Branch" and change Branch to "mai
 
 After refreshing and viewing again, you should (there could be a delay in the upload process) have the link to the website (hosted by GitHub) where the project is viewable :
 ![Github deployment step four, refresh/reload to get the link for the project](assets/readme/deployment/deployment-step-4.png)
+
+[LIVE RENTERPRISE WEBSITE](https://jbillcliffe.github.io/portfolio1-renterprise/ "Go to Renterprise")
+
+# Technologies Used
+
+## Languages
+
+- HTML5
+- CSS3
+
+## Frameworks, Libraries & Programs Used
+
+- Google Fonts[^4]
+- Font Awesome[^17]
+- CodeAnywhere [^21]
+- Figma[^1]
+- Am I Responsive?[^22]
 
 # References 
 [^1]: Figma is a free website for designing storyboards and wireframes : https://www.figma.com/
@@ -328,71 +344,5 @@ After refreshing and viewing again, you should (there could be a delay in the up
 [^18]: PHPMailer is an email creation class library for PHP : https://github.com/PHPMailer/PHPMailer
 [^19]: JSON file for all the country code data so that it was not on the html page, it would been very untidy in that case. : assets/json/country.json
 [^20]: W3 Validator : https://validator.w3.org/
-<!--
-Heading	
-# H1
-## H2
-### H3
-
-Bold	**bold text**
-
-Italic	*italicized text*
-
-Blockquote	> blockquote
-
-Ordered List	
-1. First item
-2. Second item
-3. Third item
-
-Unordered List	
-- First item
-- Second item
-- Third item
-
-Code	`code`
-
-Horizontal Rule	---
-
-Link	[title](https://www.example.com)
-
-Image	![alt text](image.jpg)
-
-Table	| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-Fenced Code Block	```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-Footnote	Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-Heading ID	### My Great Heading {#custom-id}
-
-Definition List	term
-: definition
-
-Strikethrough	~~The world is flat.~~
-
-Task List	
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-Emoji
-(see also Copying and Pasting Emoji)	That is so funny! :joy:
-
-Highlight	I need to highlight these ==very important words==.
-
-Subscript	H~2~O
-
-Superscript	X^2^
--->
+[^21]: Cloud based IDE for development : https://app.codeanywhere.com/
+[^22]: Am I Responsive? A Website designed to display a singular website at multiple resolutions : https://ui.dev/amiresponsive
