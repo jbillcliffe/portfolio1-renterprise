@@ -323,6 +323,12 @@ After refreshing and viewing again, you should (there could be a delay in the up
 - Figma[^1]
 - Am I Responsive?[^22]
 
+## Website Tutorials/References
+- Button Hover Animation Tutorial (W3Schools)[^23]
+- HTML/CSS Cards[^24]
+- Responsive iframes, used for the map on the contact.html[^25]
+- W3Schools[^26] - Invaluable for providing details on elements and their attributes and so much HTML/CSS information.
+
 # References 
 [^1]: Figma is a free website for designing storyboards and wireframes : https://www.figma.com/
 [^2]: LOGO website used for creating a logo and branding from scratch for free : https://app.logo.com/
@@ -346,3 +352,7 @@ After refreshing and viewing again, you should (there could be a delay in the up
 [^20]: W3 Validator : https://validator.w3.org/
 [^21]: Cloud based IDE for development : https://app.codeanywhere.com/
 [^22]: Am I Responsive? A Website designed to display a singular website at multiple resolutions : https://ui.dev/amiresponsive
+[^23]: Button hover animation : https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+[^24]: Cards, used for proposition cards on index.html : https://www.w3schools.com/howto/howto_css_cards.asp
+[^25]: Responsive iframes : https://www.w3schools.com/howto/howto_css_responsive_iframes.asp
+[^26]: W3Schools, comprehensive database of information for HTML and CSS : https://www.w3schools.com/
